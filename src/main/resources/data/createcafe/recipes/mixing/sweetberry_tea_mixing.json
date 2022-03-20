@@ -1,0 +1,23 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "tag": "forge:fruits/sweet_berries"
+    },
+    {
+      "fluidTag": "forge:milk",
+      "amount": 250
+    },
+    {
+      "fluid": "createcafe:melted_sugar",
+      "amount": 125
+    }
+  ],
+  "results": [
+    {
+      "fluid": "createcafe:sweetberry_tea",
+      "amount": 500
+    }
+  ],
+  "heatRequirement": "heated"
+}

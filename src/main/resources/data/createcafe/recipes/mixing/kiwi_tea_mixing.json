@@ -1,0 +1,23 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "tag": "forge:fruits/kiwi"
+    },
+    {
+      "fluidTag": "forge:milk",
+      "amount": 250
+    },
+    {
+      "fluid": "createcafe:melted_sugar",
+      "amount": 125
+    }
+  ],
+  "results": [
+    {
+      "fluid": "createcafe:kiwi_tea",
+      "amount": 500
+    }
+  ],
+  "heatRequirement": "heated"
+}

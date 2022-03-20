@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smoking",
+  "ingredient": {
+    "item": "createcafe:coffee"
+  },
+  "result": "createcafe:roasted_coffee",
+  "experience": 0.0,
+  "cookingtime": 100
+}

@@ -1,0 +1,17 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "createcafe:boba_cup"
+    },
+    {
+      "fluid": "createcafe:papaya_tea",
+      "amount": 250
+    }
+  ],
+  "results": [
+    {
+      "item": "createcafe:papaya_milk_tea"
+    }
+  ]
+}

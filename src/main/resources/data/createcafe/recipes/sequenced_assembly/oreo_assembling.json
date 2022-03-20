@@ -1,0 +1,51 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "createcafe:oreo_half"
+  },
+  "transitionalItem": {
+    "item": "createcafe:oreo_incomplete"
+  },
+  "sequence": [
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "createcafe:oreo_incomplete"
+        },
+        {
+          "fluid": "createcafe:filling",
+          "amount": 250
+        }
+      ],
+      "results": [
+        {
+          "item": "createcafe:oreo_incomplete"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createcafe:oreo_incomplete"
+        },
+        {
+          "item": "createcafe:oreo_half"
+        }
+      ],
+      "results": [
+        {
+          "item": "createcafe:oreo"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "item": "createcafe:oreo",
+      "count": 1
+    }
+  ],
+  "loops": 1
+}

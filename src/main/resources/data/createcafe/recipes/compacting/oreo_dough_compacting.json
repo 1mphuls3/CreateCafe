@@ -1,0 +1,15 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "item": "createcafe:oreo_dough",
+      "count": 1
+    }
+  ],
+  "results": [
+    {
+      "item": "createcafe:oreo_half_raw",
+      "count": 1
+    }
+  ]
+}

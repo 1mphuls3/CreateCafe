@@ -1,0 +1,19 @@
+{
+  "type": "create:milling",
+  "ingredients": [
+    {
+      "item": "createcafe:cassava_root"
+    }
+  ],
+  "results": [
+    {
+      "item": "createcafe:tapioca_flour"
+    },
+    {
+      "item": "createcafe:tapioca_flour",
+      "count": 2,
+      "chance": 0.2
+    }
+  ],
+  "processingTime": 350
+}

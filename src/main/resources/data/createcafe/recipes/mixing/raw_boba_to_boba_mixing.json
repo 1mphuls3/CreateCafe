@@ -1,0 +1,18 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "createcafe:raw_boba"
+    },
+    {
+      "fluid": "createcafe:melted_sugar",
+      "amount": 125
+    }
+  ],
+  "results": [
+    {
+      "item": "createcafe:boba"
+    }
+  ],
+  "heatRequirement": "heated"
+}

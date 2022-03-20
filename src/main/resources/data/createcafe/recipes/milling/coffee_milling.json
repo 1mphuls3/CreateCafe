@@ -1,0 +1,19 @@
+{
+  "type": "create:milling",
+  "ingredients": [
+    {
+      "item": "createcafe:coffee_fruit"
+    }
+  ],
+  "results": [
+    {
+      "item": "createcafe:coffee"
+    },
+    {
+      "item": "createcafe:coffee",
+      "count": 2,
+      "chance": 0.2
+    }
+  ],
+  "processingTime": 350
+}

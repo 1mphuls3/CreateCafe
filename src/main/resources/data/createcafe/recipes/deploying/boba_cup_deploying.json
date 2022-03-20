@@ -1,0 +1,16 @@
+{
+  "type": "create:deploying",
+  "ingredients": [
+    {
+      "item": "createcafe:empty_boba_cup"
+    },
+    {
+      "item": "createcafe:boba"
+    }
+  ],
+  "results": [
+    {
+      "item": "createcafe:boba_cup"
+    }
+  ]
+}

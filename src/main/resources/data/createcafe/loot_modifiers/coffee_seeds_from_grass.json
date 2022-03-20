@@ -1,0 +1,11 @@
+{
+  "type": "createcafe:loot_modifier",
+  "conditions": [
+    {
+      "condition": "block_state_property",
+      "block": "minecraft:grass"
+    }
+  ],
+  "addition": "createcafe:coffee",
+  "type": "createcafe:coffee_seeds_from_grass"
+}

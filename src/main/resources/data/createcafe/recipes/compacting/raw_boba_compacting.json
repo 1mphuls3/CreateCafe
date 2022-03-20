@@ -1,0 +1,15 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "item": "createcafe:tapioca_flour",
+      "count": 4
+    }
+  ],
+  "results": [
+    {
+      "item": "createcafe:raw_boba",
+      "count": 4
+    }
+  ]
+}
