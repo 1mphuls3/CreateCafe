@@ -5,6 +5,7 @@ import com.Imphuls3.createcafe.block.ModBlocks;
 import com.Imphuls3.createcafe.item.foods.*;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemNameBlockItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.DeferredRegister;
@@ -153,16 +154,16 @@ public class ModItems {
     public static final RegistryObject<Item> COFFEE_FRUIT = ITEMS.register("coffee_fruit",
             () -> new Item(new Item.Properties().food(ModFoods.COFFEE_FRUIT).tab(ModCreativeModeTab.CREATE_CAFE)));
 
-    public static final RegistryObject<Item> COFFEE = ITEMS.register("coffee",
-            () -> new BlockItem(ModBlocks.COFFEE.get(), new Item.Properties()
-                    .tab(ModCreativeModeTab.CREATE_CAFE).food(ModFoods.COFFEE)));
+    public static final RegistryObject<Item> COFFEE_BEANS = ITEMS.register("coffee_beans",
+            () -> new ItemNameBlockItem(ModBlocks.COFFEE.get(),
+                    new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ModFoods.COFFEE)));
 
     public static final RegistryObject<Item> ROASTED_COFFEE = ITEMS.register("roasted_coffee",
             () -> new Item(new Item.Properties().food(ModFoods.ROASTED_COFFEE).tab(ModCreativeModeTab.CREATE_CAFE)));
 
-    public static final RegistryObject<Item> CASSAVA = ITEMS.register("cassava_seeds",
-            () -> new BlockItem(ModBlocks.CASSAVA.get(), new Item.Properties()
-                    .tab(ModCreativeModeTab.CREATE_CAFE)));
+    public static final RegistryObject<Item> CASSAVA_SEEDS = ITEMS.register("cassava_seeds",
+            () -> new ItemNameBlockItem(ModBlocks.CASSAVA.get(),
+                    new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE)));
 
     public static final RegistryObject<Item> CASSAVA_ROOT = ITEMS.register("cassava_root",
             () -> new Item(new Item.Properties().food(ModFoods.CASSAVA_ROOT).tab(ModCreativeModeTab.CREATE_CAFE)));
