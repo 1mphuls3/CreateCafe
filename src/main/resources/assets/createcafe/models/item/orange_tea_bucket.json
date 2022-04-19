@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "createcafe:bucket/mango_tea_bucket"
+    "layer0": "createcafe:bucket/orange_tea_bucket"
   }
 }

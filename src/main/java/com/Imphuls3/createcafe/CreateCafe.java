@@ -1,8 +1,8 @@
 package com.Imphuls3.createcafe;
 
-import com.Imphuls3.createcafe.block.ModBlocks;
-import com.Imphuls3.createcafe.fluid.ModFluids;
-import com.Imphuls3.createcafe.item.ModItems;
+import com.Imphuls3.createcafe.common.block.ModBlocks;
+import com.Imphuls3.createcafe.common.fluid.ModFluids;
+import com.Imphuls3.createcafe.common.item.ModItems;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.world.level.block.Blocks;
