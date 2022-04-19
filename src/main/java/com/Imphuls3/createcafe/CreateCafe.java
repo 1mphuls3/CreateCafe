@@ -31,9 +31,10 @@ public class CreateCafe
         eventBus.addListener(this::setup);
         eventBus.addListener(this::doClientStuff);
 
+        ModItems.register(eventBus);
         ModFluids.register(eventBus);
         ModBlocks.register(eventBus);
-        ModItems.register(eventBus);
+
 
 
 
