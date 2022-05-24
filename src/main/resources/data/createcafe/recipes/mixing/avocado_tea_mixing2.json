@@ -2,7 +2,7 @@
   "type": "create:mixing",
   "ingredients": [
     {
-      "tag": "forge:fruits/starfruit"
+      "tag": "forge:fruits/avocado"
     },
     {
       "fluidTag": "forge:milk",
@@ -15,7 +15,7 @@
   ],
   "results": [
     {
-      "fluid": "createcafe:starfruit_tea",
+      "fluid": "createcafe:avocado_tea",
       "amount": 500
     }
   ],

@@ -12,6 +12,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import com.simibubi.create.repack.registrate.Registrate;
 import com.simibubi.create.repack.registrate.util.entry.FluidEntry;
 
+@SuppressWarnings("all")
 public class ModFluids {
     public static final Registrate REGISTRATE = Registrate.create(CreateCafe.MOD_ID)
             .creativeModeTab(() -> ModCreativeModeTab.CREATE_CAFE);
