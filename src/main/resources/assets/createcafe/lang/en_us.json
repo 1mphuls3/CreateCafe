@@ -55,6 +55,10 @@
   "item.createcafe.vanilla_tea_bucket": "Vanilla Tea Bucket",
   "item.createcafe.watermelon_tea_bucket": "Watermelon Tea Bucket",
   "item.createcafe.yucca_tea_bucket": "Yucca Tea Bucket",
+  "item.createcafe.citron_tea_bucket": "Citron Tea Bucket",
+  "item.createcafe.pomelo_tea_bucket": "Pomelo Tea Bucket",
+  "item.createcafe.redlove_tea_bucket": "Redlove Tea Bucket",
+  "item.createcafe.mandarin_tea_bucket": "Mandarin Tea Bucket",
 
   "item.createcafe.mana_berries": "Mana Berries",
   "item.createcafe.oreo": "Oreo",
@@ -165,5 +169,13 @@
   "item.createcafe.lavender_milk_tea": "Lavender Milk Tea",
   "block.createcafe.lavender_tea": "Lavender Milk Tea",
   "item.createcafe.oreo_milk_tea": "Oreo Milk Tea",
-  "block.createcafe.oreo_tea": "Oreo Milk Tea"
+  "block.createcafe.oreo_tea": "Oreo Milk Tea",
+  "item.createcafe.citron_milk_tea": "Citron Milk Tea",
+  "block.createcafe.citron_tea": "Citron Milk Tea",
+  "item.createcafe.redlove_milk_tea": "Redlove Milk Tea",
+  "block.createcafe.redlove_tea": "Redlove Milk Tea",
+  "item.createcafe.pomelo_milk_tea": "Pomelo Milk Tea",
+  "block.createcafe.pomelo_tea": "Pomelo Milk Tea",
+  "item.createcafe.mandarin_milk_tea": "Mandarin Milk Tea",
+  "block.createcafe.mandarin_tea": "Mandarin Milk Tea"
 }
