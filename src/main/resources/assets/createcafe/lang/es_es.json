@@ -55,6 +55,10 @@
   "item.createcafe.vanilla_tea_bucket": "Cubo con té de vainilla",
   "item.createcafe.watermelon_tea_bucket": "Cubo con té de sandía",
   "item.createcafe.yucca_tea_bucket": "Cubo con té de yuca",
+  "item.createcafe.citron_tea_bucket": "Cubo con té de citrón",
+  "item.createcafe.pomelo_tea_bucket": "Cubo con té de pomelo",
+  "item.createcafe.redlove_tea_bucket": "Cubo con té de RedLove",
+  "item.createcafe.mandarin_tea_bucket": "Cubo con té de mandarina",
 
   "item.createcafe.mana_berries": "Bayas de maná",
   "item.createcafe.oreo": "Oreo",
@@ -166,4 +170,12 @@
   "block.createcafe.lavender_tea": "Té con leche de lavanda",
   "item.createcafe.oreo_milk_tea": "Té de leche con Oreo",
   "block.createcafe.oreo_tea": "Té de leche con Oreo"
+  "item.createcafe.citron_milk_tea": "Té de leche con citrón",
+  "block.createcafe.citron_tea": "Té de leche con citrón",
+  "item.createcafe.redlove_milk_tea": "Té de leche con RedLove",
+  "block.createcafe.redlove_tea": "Té de leche con RedLove",
+  "item.createcafe.pomelo_milk_tea": "Té de leche con pomelo",
+  "block.createcafe.pomelo_tea": "Té de leche con pomelo",
+  "item.createcafe.mandarin_milk_tea": "Té de leche con mandarina",
+  "block.createcafe.mandarin_tea": "Té de leche con mandarina"
 }
