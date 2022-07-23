@@ -2,11 +2,12 @@
   "type": "create:mixing",
   "ingredients": [
     {
-      "fluidTag": "forge:milk",
+      "fluid": "createcafe:melted_sugar",
       "amount": 250
     },
     {
-      "fluid": "createcafe:melted_sugar",
+      "fluid": "minecraft:water",
+      "nbt": {},
       "amount": 250
     }
   ],
