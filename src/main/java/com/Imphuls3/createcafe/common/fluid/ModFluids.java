@@ -654,6 +654,62 @@ public class ModFluids {
                     .bucket()
                     .build()
                     .register();
+    public static FluidEntry<ForgeFlowingFluid.Flowing> POMELO_TEA =
+            REGISTRATE.fluid("pomelo_tea", FLUID_STILL_RL, FLUID_FLOWING_RL)
+                    .lang(f -> "block.createcafe.pomelo_tea", "Pomelo Milk Tea")
+                    .attributes(b -> b.viscosity(1000)
+                            .density(1400)
+                            .color(0xc8FF6F4C))
+                    .properties(p -> p.levelDecreasePerBlock(2)
+                            .tickRate(15)
+                            .slopeFindDistance(6)
+                            .explosionResistance(100f))
+                    .source(ForgeFlowingFluid.Source::new)
+                    .bucket()
+                    .build()
+                    .register();
+    public static FluidEntry<ForgeFlowingFluid.Flowing> MANDARIN_TEA =
+            REGISTRATE.fluid("mandarin_tea", FLUID_STILL_RL, FLUID_FLOWING_RL)
+                    .lang(f -> "block.createcafe.mandarin_tea", "Mandarin Milk Tea")
+                    .attributes(b -> b.viscosity(1000)
+                            .density(1400)
+                            .color(0xc8FFC216))
+                    .properties(p -> p.levelDecreasePerBlock(2)
+                            .tickRate(15)
+                            .slopeFindDistance(6)
+                            .explosionResistance(100f))
+                    .source(ForgeFlowingFluid.Source::new)
+                    .bucket()
+                    .build()
+                    .register();
+    public static FluidEntry<ForgeFlowingFluid.Flowing> CITRON_TEA =
+            REGISTRATE.fluid("citron_tea", FLUID_STILL_RL, FLUID_FLOWING_RL)
+                    .lang(f -> "block.createcafe.citron_tea", "Citron Milk Tea")
+                    .attributes(b -> b.viscosity(1000)
+                            .density(1400)
+                            .color(0xc8FFC300))
+                    .properties(p -> p.levelDecreasePerBlock(2)
+                            .tickRate(15)
+                            .slopeFindDistance(6)
+                            .explosionResistance(100f))
+                    .source(ForgeFlowingFluid.Source::new)
+                    .bucket()
+                    .build()
+                    .register();
+    public static FluidEntry<ForgeFlowingFluid.Flowing> REDLOVE_TEA =
+            REGISTRATE.fluid("redlove_tea", FLUID_STILL_RL, FLUID_FLOWING_RL)
+                    .lang(f -> "block.createcafe.redlove_tea", "Redlove Milk Tea")
+                    .attributes(b -> b.viscosity(1000)
+                            .density(1400)
+                            .color(0xc8E24F63))
+                    .properties(p -> p.levelDecreasePerBlock(2)
+                            .tickRate(15)
+                            .slopeFindDistance(6)
+                            .explosionResistance(100f))
+                    .source(ForgeFlowingFluid.Source::new)
+                    .bucket()
+                    .build()
+                    .register();
     public static void register(IEventBus eventBus){
         FLUIDS.register(eventBus);
     }
