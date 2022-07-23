@@ -2,7 +2,7 @@
   "type": "create:mixing",
   "ingredients": [
     {
-      "tag": "forge:fruits/sweetberries"
+      "tag": "forge:fruits/sweet_berries"
     },
     {
       "fluidTag": "forge:milk",
