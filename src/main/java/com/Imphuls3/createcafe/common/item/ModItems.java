@@ -40,104 +40,104 @@ public class ModItems {
     public static final RegistryObject<Item> BLOOD_ORANGE = ITEMS.register("blood_orange",
             () -> new Item(new Item.Properties().food(ModFoods.BLOOD_ORANGE).tab(ModCreativeModeTab.CREATE_CAFE)));
     //Drink Items:
-    public static final RegistryObject<Item> MANGO_TEA = ITEMS.register("mango_milk_tea",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(SpeedFood.SPEED_DRINK)));
-    public static final RegistryObject<Item> LIME_TEA = ITEMS.register("lime_milk_tea",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(SpeedFood.SPEED_DRINK)));
-    public static final RegistryObject<Item> STRAWBERRY_TEA = ITEMS.register("strawberry_milk_tea",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(SpeedFood.SPEED_DRINK)));
-    public static final RegistryObject<Item> PEACH_TEA = ITEMS.register("peach_milk_tea",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(SpeedFood.SPEED_DRINK)));
-    public static final RegistryObject<Item> PLUM_TEA = ITEMS.register("plum_milk_tea",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(SpeedFood.SPEED_DRINK)));
-    public static final RegistryObject<Item> JACKFRUIT_TEA = ITEMS.register("jackfruit_milk_tea",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(SpeedFood.SPEED_DRINK)));
-    public static final RegistryObject<Item> APRICOT_TEA = ITEMS.register("apricot_milk_tea",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(SpeedFood.SPEED_DRINK)));
-    public static final RegistryObject<Item> DURIAN_TEA = ITEMS.register("durian_milk_tea",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(SpeedFood.SPEED_DRINK)));
-    public static final RegistryObject<Item> FIG_TEA = ITEMS.register("fig_milk_tea",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(SpeedFood.SPEED_DRINK)));
-    public static final RegistryObject<Item> GRAPE_TEA = ITEMS.register("grape_milk_tea",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(SpeedFood.SPEED_DRINK)));
-    public static final RegistryObject<Item> GRAPEFRUIT_TEA = ITEMS.register("grapefruit_milk_tea",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(SpeedFood.SPEED_DRINK)));
-    public static final RegistryObject<Item> STARFRUIT_TEA = ITEMS.register("starfruit_milk_tea",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(SpeedFood.SPEED_DRINK)));
-    public static final RegistryObject<Item> MANDARIN_TEA = ITEMS.register("mandarin_milk_tea",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(SpeedFood.SPEED_DRINK)));
+    public static final RegistryObject<CafeDrink> MANGO_TEA = ITEMS.register("mango_milk_tea",
+            () -> new CafeDrink(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ModFoods.SPEED_DRINK)));
+    public static final RegistryObject<CafeDrink> LIME_TEA = ITEMS.register("lime_milk_tea",
+            () -> new CafeDrink(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ModFoods.SPEED_DRINK)));
+    public static final RegistryObject<CafeDrink> STRAWBERRY_TEA = ITEMS.register("strawberry_milk_tea",
+            () -> new CafeDrink(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ModFoods.SPEED_DRINK)));
+    public static final RegistryObject<CafeDrink> PEACH_TEA = ITEMS.register("peach_milk_tea",
+            () -> new CafeDrink(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ModFoods.SPEED_DRINK)));
+    public static final RegistryObject<CafeDrink> PLUM_TEA = ITEMS.register("plum_milk_tea",
+            () -> new CafeDrink(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ModFoods.SPEED_DRINK)));
+    public static final RegistryObject<CafeDrink> JACKFRUIT_TEA = ITEMS.register("jackfruit_milk_tea",
+            () -> new CafeDrink(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ModFoods.SPEED_DRINK)));
+    public static final RegistryObject<CafeDrink> APRICOT_TEA = ITEMS.register("apricot_milk_tea",
+            () -> new CafeDrink(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ModFoods.SPEED_DRINK)));
+    public static final RegistryObject<CafeDrink> DURIAN_TEA = ITEMS.register("durian_milk_tea",
+            () -> new CafeDrink(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ModFoods.SPEED_DRINK)));
+    public static final RegistryObject<CafeDrink> FIG_TEA = ITEMS.register("fig_milk_tea",
+            () -> new CafeDrink(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ModFoods.SPEED_DRINK)));
+    public static final RegistryObject<CafeDrink> GRAPE_TEA = ITEMS.register("grape_milk_tea",
+            () -> new CafeDrink(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ModFoods.SPEED_DRINK)));
+    public static final RegistryObject<CafeDrink> GRAPEFRUIT_TEA = ITEMS.register("grapefruit_milk_tea",
+            () -> new CafeDrink(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ModFoods.SPEED_DRINK)));
+    public static final RegistryObject<CafeDrink> STARFRUIT_TEA = ITEMS.register("starfruit_milk_tea",
+            () -> new CafeDrink(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ModFoods.SPEED_DRINK)));
+    public static final RegistryObject<CafeDrink> MANDARIN_TEA = ITEMS.register("mandarin_milk_tea",
+            () -> new CafeDrink(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ModFoods.SPEED_DRINK)));
 
-    public static final RegistryObject<Item> BLOOD_TEA = ITEMS.register("blood_orange_milk_tea",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(RegenFood.REGEN_DRINK)));
-    public static final RegistryObject<Item> LYCHEE_TEA = ITEMS.register("lychee_milk_tea",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(RegenFood.REGEN_DRINK)));
-    public static final RegistryObject<Item> BLUEBERRY_TEA = ITEMS.register("blueberry_milk_tea",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(RegenFood.REGEN_DRINK)));
-    public static final RegistryObject<Item> PINEAPPLE_TEA = ITEMS.register("pineapple_milk_tea",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(RegenFood.REGEN_DRINK)));
-    public static final RegistryObject<Item> APPLE_TEA = ITEMS.register("apple_milk_tea",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(RegenFood.REGEN_DRINK)));
-    public static final RegistryObject<Item> PUMPKIN_TEA = ITEMS.register("pumpkin_milk_tea",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(RegenFood.REGEN_DRINK)));
-    public static final RegistryObject<Item> AVOCADO_TEA = ITEMS.register("avocado_milk_tea",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(RegenFood.REGEN_DRINK)));
-    public static final RegistryObject<Item> SWEETBERRY_TEA = ITEMS.register("sweetberry_milk_tea",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(RegenFood.REGEN_DRINK)));
-    public static final RegistryObject<Item> TAMARIND_TEA = ITEMS.register("tamarind_milk_tea",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(RegenFood.REGEN_DRINK)));
-    public static final RegistryObject<Item> PAPAYA_TEA = ITEMS.register("papaya_milk_tea",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(RegenFood.REGEN_DRINK)));
-    public static final RegistryObject<Item> REDLOVE_TEA = ITEMS.register("redlove_milk_tea",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(RegenFood.REGEN_DRINK)));
+    public static final RegistryObject<CafeDrink> BLOOD_TEA = ITEMS.register("blood_orange_milk_tea",
+            () -> new CafeDrink(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ModFoods.REGEN_DRINK)));
+    public static final RegistryObject<CafeDrink> LYCHEE_TEA = ITEMS.register("lychee_milk_tea",
+            () -> new CafeDrink(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ModFoods.REGEN_DRINK)));
+    public static final RegistryObject<CafeDrink> BLUEBERRY_TEA = ITEMS.register("blueberry_milk_tea",
+            () -> new CafeDrink(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ModFoods.REGEN_DRINK)));
+    public static final RegistryObject<CafeDrink> PINEAPPLE_TEA = ITEMS.register("pineapple_milk_tea",
+            () -> new CafeDrink(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ModFoods.REGEN_DRINK)));
+    public static final RegistryObject<CafeDrink> APPLE_TEA = ITEMS.register("apple_milk_tea",
+            () -> new CafeDrink(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ModFoods.REGEN_DRINK)));
+    public static final RegistryObject<CafeDrink> PUMPKIN_TEA = ITEMS.register("pumpkin_milk_tea",
+            () -> new CafeDrink(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ModFoods.REGEN_DRINK)));
+    public static final RegistryObject<CafeDrink> AVOCADO_TEA = ITEMS.register("avocado_milk_tea",
+            () -> new CafeDrink(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ModFoods.REGEN_DRINK)));
+    public static final RegistryObject<CafeDrink> SWEETBERRY_TEA = ITEMS.register("sweetberry_milk_tea",
+            () -> new CafeDrink(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ModFoods.REGEN_DRINK)));
+    public static final RegistryObject<CafeDrink> TAMARIND_TEA = ITEMS.register("tamarind_milk_tea",
+            () -> new CafeDrink(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ModFoods.REGEN_DRINK)));
+    public static final RegistryObject<CafeDrink> PAPAYA_TEA = ITEMS.register("papaya_milk_tea",
+            () -> new CafeDrink(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ModFoods.REGEN_DRINK)));
+    public static final RegistryObject<CafeDrink> REDLOVE_TEA = ITEMS.register("redlove_milk_tea",
+            () -> new CafeDrink(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ModFoods.REGEN_DRINK)));
 
-    public static final RegistryObject<Item> MANA_TEA = ITEMS.register("mana_berry_milk_tea",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(StrengthFood.STRENGTH_DRINK)));
-    public static final RegistryObject<Item> KIWI_TEA = ITEMS.register("kiwi_milk_tea",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(StrengthFood.STRENGTH_DRINK)));
-    public static final RegistryObject<Item> ORANGE_TEA = ITEMS.register("orange_milk_tea",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(StrengthFood.STRENGTH_DRINK)));
-    public static final RegistryObject<Item> YUCCA_TEA = ITEMS.register("yucca_milk_tea",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(StrengthFood.STRENGTH_DRINK)));
-    public static final RegistryObject<Item> ALOE_TEA = ITEMS.register("aloe_milk_tea",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(StrengthFood.STRENGTH_DRINK)));
-    public static final RegistryObject<Item> COCONUT_TEA = ITEMS.register("coconut_milk_tea",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(StrengthFood.STRENGTH_DRINK)));
-    public static final RegistryObject<Item> PERSIMMON_TEA = ITEMS.register("persimmon_milk_tea",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(StrengthFood.STRENGTH_DRINK)));
-    public static final RegistryObject<Item> POMEGRANATE_TEA = ITEMS.register("pomegranate_milk_tea",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(StrengthFood.STRENGTH_DRINK)));
-    public static final RegistryObject<Item> RASPBERRY_TEA = ITEMS.register("raspberry_milk_tea",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(StrengthFood.STRENGTH_DRINK)));
-    public static final RegistryObject<Item> POMELO_TEA = ITEMS.register("pomelo_milk_tea",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(StrengthFood.STRENGTH_DRINK)));
+    public static final RegistryObject<CafeDrink> MANA_TEA = ITEMS.register("mana_berry_milk_tea",
+            () -> new CafeDrink(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ModFoods.STRENGTH_DRINK)));
+    public static final RegistryObject<CafeDrink> KIWI_TEA = ITEMS.register("kiwi_milk_tea",
+            () -> new CafeDrink(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ModFoods.STRENGTH_DRINK)));
+    public static final RegistryObject<CafeDrink> ORANGE_TEA = ITEMS.register("orange_milk_tea",
+            () -> new CafeDrink(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ModFoods.STRENGTH_DRINK)));
+    public static final RegistryObject<CafeDrink> YUCCA_TEA = ITEMS.register("yucca_milk_tea",
+            () -> new CafeDrink(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ModFoods.STRENGTH_DRINK)));
+    public static final RegistryObject<CafeDrink> ALOE_TEA = ITEMS.register("aloe_milk_tea",
+            () -> new CafeDrink(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ModFoods.STRENGTH_DRINK)));
+    public static final RegistryObject<CafeDrink> COCONUT_TEA = ITEMS.register("coconut_milk_tea",
+            () -> new CafeDrink(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ModFoods.STRENGTH_DRINK)));
+    public static final RegistryObject<CafeDrink> PERSIMMON_TEA = ITEMS.register("persimmon_milk_tea",
+            () -> new CafeDrink(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ModFoods.STRENGTH_DRINK)));
+    public static final RegistryObject<CafeDrink> POMEGRANATE_TEA = ITEMS.register("pomegranate_milk_tea",
+            () -> new CafeDrink(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ModFoods.STRENGTH_DRINK)));
+    public static final RegistryObject<CafeDrink> RASPBERRY_TEA = ITEMS.register("raspberry_milk_tea",
+            () -> new CafeDrink(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ModFoods.STRENGTH_DRINK)));
+    public static final RegistryObject<CafeDrink> POMELO_TEA = ITEMS.register("pomelo_milk_tea",
+            () -> new CafeDrink(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ModFoods.STRENGTH_DRINK)));
 
-    public static final RegistryObject<Item> LEMON_TEA = ITEMS.register("lemon_milk_tea",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ResFood.RES_DRINK)));
-    public static final RegistryObject<Item> WATERMELON_TEA = ITEMS.register("watermelon_milk_tea",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ResFood.RES_DRINK)));
-    public static final RegistryObject<Item> VANILLA_TEA = ITEMS.register("vanilla_milk_tea",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ResFood.RES_DRINK)));
-    public static final RegistryObject<Item> BANANA_TEA = ITEMS.register("banana_milk_tea",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ResFood.RES_DRINK)));
-    public static final RegistryObject<Item> CHERRY_TEA = ITEMS.register("cherry_milk_tea",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ResFood.RES_DRINK)));
-    public static final RegistryObject<Item> BLACKBERRY_TEA = ITEMS.register("blackberry_milk_tea",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ResFood.RES_DRINK)));
-    public static final RegistryObject<Item> DRAGONFRUIT_TEA = ITEMS.register("dragonfruit_milk_tea",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ResFood.RES_DRINK)));
-    public static final RegistryObject<Item> GOOSEBERRY_TEA = ITEMS.register("gooseberry_milk_tea",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ResFood.RES_DRINK)));
-    public static final RegistryObject<Item> GUAVA_TEA = ITEMS.register("guava_milk_tea",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ResFood.RES_DRINK)));
-    public static final RegistryObject<Item> PASSIONFRUIT_TEA = ITEMS.register("passionfruit_milk_tea",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ResFood.RES_DRINK)));
-    public static final RegistryObject<Item> LAVENDER_TEA = ITEMS.register("lavender_milk_tea",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ResFood.RES_DRINK)));
-    public static final RegistryObject<Item> CITRON_TEA = ITEMS.register("citron_milk_tea",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ResFood.RES_DRINK)));
+    public static final RegistryObject<CafeDrink> LEMON_TEA = ITEMS.register("lemon_milk_tea",
+            () -> new CafeDrink(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ModFoods.RES_DRINK)));
+    public static final RegistryObject<CafeDrink> WATERMELON_TEA = ITEMS.register("watermelon_milk_tea",
+            () -> new CafeDrink(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ModFoods.RES_DRINK)));
+    public static final RegistryObject<CafeDrink> VANILLA_TEA = ITEMS.register("vanilla_milk_tea",
+            () -> new CafeDrink(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ModFoods.RES_DRINK)));
+    public static final RegistryObject<CafeDrink> BANANA_TEA = ITEMS.register("banana_milk_tea",
+            () -> new CafeDrink(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ModFoods.RES_DRINK)));
+    public static final RegistryObject<CafeDrink> CHERRY_TEA = ITEMS.register("cherry_milk_tea",
+            () -> new CafeDrink(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ModFoods.RES_DRINK)));
+    public static final RegistryObject<CafeDrink> BLACKBERRY_TEA = ITEMS.register("blackberry_milk_tea",
+            () -> new CafeDrink(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ModFoods.RES_DRINK)));
+    public static final RegistryObject<CafeDrink> DRAGONFRUIT_TEA = ITEMS.register("dragonfruit_milk_tea",
+            () -> new CafeDrink(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ModFoods.RES_DRINK)));
+    public static final RegistryObject<CafeDrink> GOOSEBERRY_TEA = ITEMS.register("gooseberry_milk_tea",
+            () -> new CafeDrink(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ModFoods.RES_DRINK)));
+    public static final RegistryObject<CafeDrink> GUAVA_TEA = ITEMS.register("guava_milk_tea",
+            () -> new CafeDrink(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ModFoods.RES_DRINK)));
+    public static final RegistryObject<CafeDrink> PASSIONFRUIT_TEA = ITEMS.register("passionfruit_milk_tea",
+            () -> new CafeDrink(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ModFoods.RES_DRINK)));
+    public static final RegistryObject<CafeDrink> LAVENDER_TEA = ITEMS.register("lavender_milk_tea",
+            () -> new CafeDrink(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ModFoods.RES_DRINK)));
+    public static final RegistryObject<CafeDrink> CITRON_TEA = ITEMS.register("citron_milk_tea",
+            () -> new CafeDrink(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ModFoods.RES_DRINK)));
 
-    public static final RegistryObject<Item> OREO_TEA = ITEMS.register("oreo_milk_tea",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(SuperFood.SUPER_DRINK)));
+    public static final RegistryObject<CafeDrink> OREO_TEA = ITEMS.register("oreo_milk_tea",
+            () -> new CafeDrink(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ModFoods.SUPER_DRINK)));
 
     //Non Food Items:
     public static final RegistryObject<Item> BOBA_CUP = ITEMS.register("boba_cup",
