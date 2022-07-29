@@ -1,9 +1,9 @@
 {
-  "type": "minecraft:smelting",
+  "type": "minecraft:smoking",
   "ingredient": {
     "item": "createcafe:oreo_half_raw"
   },
   "result": "createcafe:oreo_half",
-  "experience": 0.2,
-  "cookingtime": 200
+  "experience": 0.0,
+  "cookingtime": 100
 }
