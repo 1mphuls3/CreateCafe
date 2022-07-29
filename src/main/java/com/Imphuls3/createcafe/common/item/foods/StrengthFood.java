@@ -5,7 +5,7 @@ import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.Item;
 
-public class StrengthFood extends Item {
+public class StrengthFood extends CafeDrink {
     public static final FoodProperties STRENGTH_DRINK = (new FoodProperties.Builder())
             .effect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 200, 1), 1.0F)
             .nutrition(8).saturationMod(0.2F).build();
