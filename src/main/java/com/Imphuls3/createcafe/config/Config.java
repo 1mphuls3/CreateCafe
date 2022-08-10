@@ -1,4 +1,4 @@
-package com.Imphuls3.createcafe.common.config;
+package com.Imphuls3.createcafe.config;
 
 import net.minecraftforge.common.ForgeConfigSpec;
 import net.minecraftforge.fml.ModLoadingContext;

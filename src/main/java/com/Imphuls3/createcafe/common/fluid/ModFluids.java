@@ -2,15 +2,14 @@ package com.Imphuls3.createcafe.common.fluid;
 
 import com.Imphuls3.createcafe.CreateCafe;
 import com.Imphuls3.createcafe.common.item.ModCreativeModeTab;
+import com.simibubi.create.repack.registrate.Registrate;
 import net.minecraft.resources.ResourceLocation;
-
 import net.minecraft.world.level.material.Fluid;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fluids.ForgeFlowingFluid;
+import com.simibubi.create.repack.registrate.util.entry.FluidEntry;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
-import com.simibubi.create.repack.registrate.Registrate;
-import com.simibubi.create.repack.registrate.util.entry.FluidEntry;
 
 @SuppressWarnings("all")
 public class ModFluids {
@@ -28,7 +27,7 @@ public class ModFluids {
                     .lang(f -> "block.createcafe.melted_sugar", "Melted Sugar")
                     .attributes(b -> b.viscosity(1000)
                             .density(1400)
-                            .color(0xc8fff7e0)) //Color is hexadecimal after the first 4 characters (0xc8), c8 is transparency in hex
+                            .color(0xc8fff7e0))
                     .properties(p -> p.levelDecreasePerBlock(2)
                             .tickRate(15)
                             .slopeFindDistance(6)

@@ -1,7 +1,8 @@
 package com.Imphuls3.createcafe;
 
 import com.Imphuls3.createcafe.common.block.ModBlocks;
-import com.Imphuls3.createcafe.common.config.Config;
+import com.Imphuls3.createcafe.compat.Compat;
+import com.Imphuls3.createcafe.config.Config;
 import com.Imphuls3.createcafe.common.fluid.ModFluids;
 import com.Imphuls3.createcafe.common.item.ModItems;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
@@ -36,6 +37,8 @@ public class CreateCafe
         ModFluids.register(eventBus);
         ModBlocks.register(eventBus);
         Config.register();
+
+        Compat.init();
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
     }

@@ -3,6 +3,7 @@ package com.Imphuls3.createcafe.common.item;
 import com.Imphuls3.createcafe.CreateCafe;
 import com.Imphuls3.createcafe.common.block.ModBlocks;
 import com.Imphuls3.createcafe.common.item.foods.*;
+import com.Imphuls3.createcafe.compat.Compat;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemNameBlockItem;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -14,6 +15,11 @@ public class ModItems {
 
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, CreateCafe.MOD_ID);
+
+    public static Item.Properties HIDDEN_PROPERTIES() {
+        return new Item.Properties().stacksTo(1);
+    }
+
     //Food Items:
     public static final RegistryObject<Item> MANA_BERRIES = ITEMS.register("mana_berries",
             () -> new Item(new Item.Properties().food(ModFoods.MANA_BERRIES).tab(ModCreativeModeTab.CREATE_CAFE)));
@@ -41,103 +47,103 @@ public class ModItems {
             () -> new Item(new Item.Properties().food(ModFoods.BLOOD_ORANGE).tab(ModCreativeModeTab.CREATE_CAFE)));
     //Drink Items:
     public static final RegistryObject<CafeDrink> MANGO_TEA = ITEMS.register("mango_milk_tea",
-            () -> new CafeDrink(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ModFoods.SPEED_DRINK)));
+            () -> new CafeDrink((Compat.PH2TREESLOADED || Compat.CROPTOPIALOADED ? Compat.Loaded.makeDrink().food(ModFoods.SPEED_DRINK) : HIDDEN_PROPERTIES()), "speed"));
     public static final RegistryObject<CafeDrink> LIME_TEA = ITEMS.register("lime_milk_tea",
-            () -> new CafeDrink(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ModFoods.SPEED_DRINK)));
+            () -> new CafeDrink((Compat.PH2TREESLOADED || Compat.CROPTOPIALOADED ? Compat.Loaded.makeDrink().food(ModFoods.SPEED_DRINK) : HIDDEN_PROPERTIES()), "speed"));
     public static final RegistryObject<CafeDrink> STRAWBERRY_TEA = ITEMS.register("strawberry_milk_tea",
-            () -> new CafeDrink(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ModFoods.SPEED_DRINK)));
+            () -> new CafeDrink((Compat.PH2CROPSSLOADED || Compat.CROPTOPIALOADED ? Compat.Loaded.makeDrink().food(ModFoods.SPEED_DRINK) : HIDDEN_PROPERTIES()), "speed"));
     public static final RegistryObject<CafeDrink> PEACH_TEA = ITEMS.register("peach_milk_tea",
-            () -> new CafeDrink(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ModFoods.SPEED_DRINK)));
+            () -> new CafeDrink((Compat.PH2TREESLOADED || Compat.CROPTOPIALOADED ? Compat.Loaded.makeDrink().food(ModFoods.SPEED_DRINK) : HIDDEN_PROPERTIES()), "speed"));
     public static final RegistryObject<CafeDrink> PLUM_TEA = ITEMS.register("plum_milk_tea",
-            () -> new CafeDrink(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ModFoods.SPEED_DRINK)));
+            () -> new CafeDrink((Compat.PH2TREESLOADED || Compat.CROPTOPIALOADED ? Compat.Loaded.makeDrink().food(ModFoods.SPEED_DRINK) : HIDDEN_PROPERTIES()), "speed"));
     public static final RegistryObject<CafeDrink> JACKFRUIT_TEA = ITEMS.register("jackfruit_milk_tea",
-            () -> new CafeDrink(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ModFoods.SPEED_DRINK)));
+            () -> new CafeDrink((Compat.PH2TREESLOADED ? Compat.Loaded.makeDrink().food(ModFoods.SPEED_DRINK) : HIDDEN_PROPERTIES()), "speed"));
     public static final RegistryObject<CafeDrink> APRICOT_TEA = ITEMS.register("apricot_milk_tea",
-            () -> new CafeDrink(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ModFoods.SPEED_DRINK)));
+            () -> new CafeDrink((Compat.PH2TREESLOADED || Compat.CROPTOPIALOADED ? Compat.Loaded.makeDrink().food(ModFoods.SPEED_DRINK) : HIDDEN_PROPERTIES()), "speed"));
     public static final RegistryObject<CafeDrink> DURIAN_TEA = ITEMS.register("durian_milk_tea",
-            () -> new CafeDrink(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ModFoods.SPEED_DRINK)));
+            () -> new CafeDrink((Compat.PH2TREESLOADED ? Compat.Loaded.makeDrink().food(ModFoods.SPEED_DRINK) : HIDDEN_PROPERTIES()), "speed"));
     public static final RegistryObject<CafeDrink> FIG_TEA = ITEMS.register("fig_milk_tea",
-            () -> new CafeDrink(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ModFoods.SPEED_DRINK)));
+            () -> new CafeDrink((Compat.PH2TREESLOADED || Compat.CROPTOPIALOADED ? Compat.Loaded.makeDrink().food(ModFoods.SPEED_DRINK) : HIDDEN_PROPERTIES()), "speed"));
     public static final RegistryObject<CafeDrink> GRAPE_TEA = ITEMS.register("grape_milk_tea",
-            () -> new CafeDrink(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ModFoods.SPEED_DRINK)));
+            () -> new CafeDrink((Compat.PH2CROPSSLOADED || Compat.CROPTOPIALOADED ? Compat.Loaded.makeDrink().food(ModFoods.SPEED_DRINK) : HIDDEN_PROPERTIES()), "speed"));
     public static final RegistryObject<CafeDrink> GRAPEFRUIT_TEA = ITEMS.register("grapefruit_milk_tea",
-            () -> new CafeDrink(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ModFoods.SPEED_DRINK)));
+            () -> new CafeDrink((Compat.PH2TREESLOADED || Compat.CROPTOPIALOADED ? Compat.Loaded.makeDrink().food(ModFoods.SPEED_DRINK) : HIDDEN_PROPERTIES()), "speed"));
     public static final RegistryObject<CafeDrink> STARFRUIT_TEA = ITEMS.register("starfruit_milk_tea",
-            () -> new CafeDrink(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ModFoods.SPEED_DRINK)));
+            () -> new CafeDrink((Compat.PH2TREESLOADED ? Compat.Loaded.makeDrink().food(ModFoods.SPEED_DRINK) : HIDDEN_PROPERTIES()), "speed"));
     public static final RegistryObject<CafeDrink> MANDARIN_TEA = ITEMS.register("mandarin_milk_tea",
-            () -> new CafeDrink(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ModFoods.SPEED_DRINK)));
+            () -> new CafeDrink((Compat.FRUITTREESLOADED ? Compat.Loaded.makeDrink().food(ModFoods.SPEED_DRINK) : HIDDEN_PROPERTIES()), "speed"));
 
     public static final RegistryObject<CafeDrink> BLOOD_TEA = ITEMS.register("blood_orange_milk_tea",
-            () -> new CafeDrink(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ModFoods.REGEN_DRINK)));
+            () -> new CafeDrink((Compat.BLOODMAGICLOADED ? Compat.Loaded.makeDrink().food(ModFoods.REGEN_DRINK) : HIDDEN_PROPERTIES()), "regen"));
     public static final RegistryObject<CafeDrink> LYCHEE_TEA = ITEMS.register("lychee_milk_tea",
-            () -> new CafeDrink(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ModFoods.REGEN_DRINK)));
+            () -> new CafeDrink((Compat.PH2TREESLOADED ? Compat.Loaded.makeDrink().food(ModFoods.REGEN_DRINK) : HIDDEN_PROPERTIES()), "regen"));
     public static final RegistryObject<CafeDrink> BLUEBERRY_TEA = ITEMS.register("blueberry_milk_tea",
-            () -> new CafeDrink(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ModFoods.REGEN_DRINK)));
+            () -> new CafeDrink((Compat.PH2CROPSSLOADED || Compat.CROPTOPIALOADED ? Compat.Loaded.makeDrink().food(ModFoods.REGEN_DRINK) : HIDDEN_PROPERTIES()), "regen"));
     public static final RegistryObject<CafeDrink> PINEAPPLE_TEA = ITEMS.register("pineapple_milk_tea",
-            () -> new CafeDrink(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ModFoods.REGEN_DRINK)));
+            () -> new CafeDrink((Compat.PH2CROPSSLOADED || Compat.CROPTOPIALOADED ? Compat.Loaded.makeDrink().food(ModFoods.REGEN_DRINK) : HIDDEN_PROPERTIES()), "regen"));
     public static final RegistryObject<CafeDrink> APPLE_TEA = ITEMS.register("apple_milk_tea",
-            () -> new CafeDrink(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ModFoods.REGEN_DRINK)));
+            () -> new CafeDrink(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ModFoods.REGEN_DRINK), "regen"));
     public static final RegistryObject<CafeDrink> PUMPKIN_TEA = ITEMS.register("pumpkin_milk_tea",
-            () -> new CafeDrink(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ModFoods.REGEN_DRINK)));
+            () -> new CafeDrink(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ModFoods.REGEN_DRINK), "regen"));
     public static final RegistryObject<CafeDrink> AVOCADO_TEA = ITEMS.register("avocado_milk_tea",
-            () -> new CafeDrink(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ModFoods.REGEN_DRINK)));
+            () -> new CafeDrink((Compat.PH2TREESLOADED || Compat.CROPTOPIALOADED ? Compat.Loaded.makeDrink().food(ModFoods.REGEN_DRINK) : HIDDEN_PROPERTIES()), "regen"));
     public static final RegistryObject<CafeDrink> SWEETBERRY_TEA = ITEMS.register("sweetberry_milk_tea",
-            () -> new CafeDrink(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ModFoods.REGEN_DRINK)));
+            () -> new CafeDrink(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ModFoods.REGEN_DRINK), "regen"));
     public static final RegistryObject<CafeDrink> TAMARIND_TEA = ITEMS.register("tamarind_milk_tea",
-            () -> new CafeDrink(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ModFoods.REGEN_DRINK)));
+            () -> new CafeDrink((Compat.PH2TREESLOADED ? Compat.Loaded.makeDrink().food(ModFoods.REGEN_DRINK) : HIDDEN_PROPERTIES()), "regen"));
     public static final RegistryObject<CafeDrink> PAPAYA_TEA = ITEMS.register("papaya_milk_tea",
-            () -> new CafeDrink(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ModFoods.REGEN_DRINK)));
+            () -> new CafeDrink((Compat.PH2CROPSSLOADED ? Compat.Loaded.makeDrink().food(ModFoods.REGEN_DRINK) : HIDDEN_PROPERTIES()), "regen"));
     public static final RegistryObject<CafeDrink> REDLOVE_TEA = ITEMS.register("redlove_milk_tea",
-            () -> new CafeDrink(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ModFoods.REGEN_DRINK)));
+            () -> new CafeDrink((Compat.FRUITTREESLOADED ? Compat.Loaded.makeDrink().food(ModFoods.REGEN_DRINK) : HIDDEN_PROPERTIES()), "regen"));
 
     public static final RegistryObject<CafeDrink> MANA_TEA = ITEMS.register("mana_berry_milk_tea",
-            () -> new CafeDrink(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ModFoods.STRENGTH_DRINK)));
+            () -> new CafeDrink((Compat.BOTANIALOADED ? Compat.Loaded.makeDrink().food(ModFoods.STRENGTH_DRINK) : HIDDEN_PROPERTIES()), "strength"));
     public static final RegistryObject<CafeDrink> KIWI_TEA = ITEMS.register("kiwi_milk_tea",
-            () -> new CafeDrink(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ModFoods.STRENGTH_DRINK)));
+            () -> new CafeDrink((Compat.PH2CROPSSLOADED || Compat.CROPTOPIALOADED ? Compat.Loaded.makeDrink().food(ModFoods.STRENGTH_DRINK) : HIDDEN_PROPERTIES()), "strength"));
     public static final RegistryObject<CafeDrink> ORANGE_TEA = ITEMS.register("orange_milk_tea",
-            () -> new CafeDrink(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ModFoods.STRENGTH_DRINK)));
+            () -> new CafeDrink((Compat.PH2TREESLOADED || Compat.CROPTOPIALOADED ? Compat.Loaded.makeDrink().food(ModFoods.STRENGTH_DRINK) : HIDDEN_PROPERTIES()), "strength"));
     public static final RegistryObject<CafeDrink> YUCCA_TEA = ITEMS.register("yucca_milk_tea",
-            () -> new CafeDrink(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ModFoods.STRENGTH_DRINK)));
+            () -> new CafeDrink(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ModFoods.STRENGTH_DRINK), "strength"));
     public static final RegistryObject<CafeDrink> ALOE_TEA = ITEMS.register("aloe_milk_tea",
-            () -> new CafeDrink(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ModFoods.STRENGTH_DRINK)));
+            () -> new CafeDrink((Compat.BYGLOADED || Compat.PH2CROPSSLOADED ? Compat.Loaded.makeDrink().food(ModFoods.STRENGTH_DRINK) : HIDDEN_PROPERTIES()), "strength"));
     public static final RegistryObject<CafeDrink> COCONUT_TEA = ITEMS.register("coconut_milk_tea",
-            () -> new CafeDrink(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ModFoods.STRENGTH_DRINK)));
+            () -> new CafeDrink((Compat.CROPTOPIALOADED || Compat.PH2TREESLOADED ? Compat.Loaded.makeDrink().food(ModFoods.STRENGTH_DRINK) : HIDDEN_PROPERTIES()), "strength"));
     public static final RegistryObject<CafeDrink> PERSIMMON_TEA = ITEMS.register("persimmon_milk_tea",
-            () -> new CafeDrink(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ModFoods.STRENGTH_DRINK)));
+            () -> new CafeDrink((Compat.CROPTOPIALOADED || Compat.PH2TREESLOADED ? Compat.Loaded.makeDrink().food(ModFoods.STRENGTH_DRINK) : HIDDEN_PROPERTIES()), "strength"));
     public static final RegistryObject<CafeDrink> POMEGRANATE_TEA = ITEMS.register("pomegranate_milk_tea",
-            () -> new CafeDrink(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ModFoods.STRENGTH_DRINK)));
+            () -> new CafeDrink((Compat.PH2TREESLOADED ? Compat.Loaded.makeDrink().food(ModFoods.STRENGTH_DRINK) : HIDDEN_PROPERTIES()), "strength"));
     public static final RegistryObject<CafeDrink> RASPBERRY_TEA = ITEMS.register("raspberry_milk_tea",
-            () -> new CafeDrink(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ModFoods.STRENGTH_DRINK)));
+            () -> new CafeDrink((Compat.CROPTOPIALOADED || Compat.PH2CROPSSLOADED ? Compat.Loaded.makeDrink().food(ModFoods.STRENGTH_DRINK) : HIDDEN_PROPERTIES()), "strength"));
     public static final RegistryObject<CafeDrink> POMELO_TEA = ITEMS.register("pomelo_milk_tea",
-            () -> new CafeDrink(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ModFoods.STRENGTH_DRINK)));
+            () -> new CafeDrink((Compat.FRUITTREESLOADED ? Compat.Loaded.makeDrink().food(ModFoods.STRENGTH_DRINK) : HIDDEN_PROPERTIES()), "strength"));
 
     public static final RegistryObject<CafeDrink> LEMON_TEA = ITEMS.register("lemon_milk_tea",
-            () -> new CafeDrink(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ModFoods.RES_DRINK)));
+            () -> new CafeDrink((Compat.CROPTOPIALOADED || Compat.PH2TREESLOADED ? Compat.Loaded.makeDrink().food(ModFoods.RES_DRINK) : HIDDEN_PROPERTIES()), "res"));
     public static final RegistryObject<CafeDrink> WATERMELON_TEA = ITEMS.register("watermelon_milk_tea",
-            () -> new CafeDrink(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ModFoods.RES_DRINK)));
+            () -> new CafeDrink(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ModFoods.RES_DRINK), "res"));
     public static final RegistryObject<CafeDrink> VANILLA_TEA = ITEMS.register("vanilla_milk_tea",
-            () -> new CafeDrink(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ModFoods.RES_DRINK)));
+            () -> new CafeDrink((Compat.CROPTOPIALOADED || Compat.PH2TREESLOADED ? Compat.Loaded.makeDrink().food(ModFoods.RES_DRINK) : HIDDEN_PROPERTIES()), "res"));
     public static final RegistryObject<CafeDrink> BANANA_TEA = ITEMS.register("banana_milk_tea",
-            () -> new CafeDrink(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ModFoods.RES_DRINK)));
+            () -> new CafeDrink((Compat.CROPTOPIALOADED || Compat.PH2TREESLOADED ? Compat.Loaded.makeDrink().food(ModFoods.RES_DRINK) : HIDDEN_PROPERTIES()), "res"));
     public static final RegistryObject<CafeDrink> CHERRY_TEA = ITEMS.register("cherry_milk_tea",
-            () -> new CafeDrink(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ModFoods.RES_DRINK)));
+            () -> new CafeDrink((Compat.CROPTOPIALOADED || Compat.PH2TREESLOADED ? Compat.Loaded.makeDrink().food(ModFoods.RES_DRINK) : HIDDEN_PROPERTIES()), "res"));
     public static final RegistryObject<CafeDrink> BLACKBERRY_TEA = ITEMS.register("blackberry_milk_tea",
-            () -> new CafeDrink(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ModFoods.RES_DRINK)));
+            () -> new CafeDrink((Compat.CROPTOPIALOADED || Compat.PH2CROPSSLOADED ? Compat.Loaded.makeDrink().food(ModFoods.RES_DRINK) : HIDDEN_PROPERTIES()), "res"));
     public static final RegistryObject<CafeDrink> DRAGONFRUIT_TEA = ITEMS.register("dragonfruit_milk_tea",
-            () -> new CafeDrink(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ModFoods.RES_DRINK)));
+            () -> new CafeDrink((Compat.CROPTOPIALOADED || Compat.PH2TREESLOADED ? Compat.Loaded.makeDrink().food(ModFoods.RES_DRINK) : HIDDEN_PROPERTIES()), "res"));
     public static final RegistryObject<CafeDrink> GOOSEBERRY_TEA = ITEMS.register("gooseberry_milk_tea",
-            () -> new CafeDrink(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ModFoods.RES_DRINK)));
+            () -> new CafeDrink((Compat.PH2TREESLOADED ? Compat.Loaded.makeDrink().food(ModFoods.RES_DRINK) : HIDDEN_PROPERTIES()), "res"));
     public static final RegistryObject<CafeDrink> GUAVA_TEA = ITEMS.register("guava_milk_tea",
-            () -> new CafeDrink(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ModFoods.RES_DRINK)));
+            () -> new CafeDrink((Compat.PH2TREESLOADED ? Compat.Loaded.makeDrink().food(ModFoods.RES_DRINK) : HIDDEN_PROPERTIES()), "res"));
     public static final RegistryObject<CafeDrink> PASSIONFRUIT_TEA = ITEMS.register("passionfruit_milk_tea",
-            () -> new CafeDrink(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ModFoods.RES_DRINK)));
+            () -> new CafeDrink((Compat.PH2TREESLOADED ? Compat.Loaded.makeDrink().food(ModFoods.RES_DRINK) : HIDDEN_PROPERTIES()), "res"));
     public static final RegistryObject<CafeDrink> LAVENDER_TEA = ITEMS.register("lavender_milk_tea",
-            () -> new CafeDrink(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ModFoods.RES_DRINK)));
+            () -> new CafeDrink((Compat.BOPLOADED ? Compat.Loaded.makeDrink().food(ModFoods.RES_DRINK) : HIDDEN_PROPERTIES()), "res"));
     public static final RegistryObject<CafeDrink> CITRON_TEA = ITEMS.register("citron_milk_tea",
-            () -> new CafeDrink(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ModFoods.RES_DRINK)));
+            () -> new CafeDrink((Compat.FRUITTREESLOADED ? Compat.Loaded.makeDrink().food(ModFoods.RES_DRINK) : HIDDEN_PROPERTIES()), "res"));
 
     public static final RegistryObject<CafeDrink> OREO_TEA = ITEMS.register("oreo_milk_tea",
-            () -> new CafeDrink(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ModFoods.SUPER_DRINK)));
+            () -> new CafeDrink(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ModFoods.SUPER_DRINK), "super"));
 
     //Non Food Items:
     public static final RegistryObject<Item> BOBA_CUP = ITEMS.register("boba_cup",
