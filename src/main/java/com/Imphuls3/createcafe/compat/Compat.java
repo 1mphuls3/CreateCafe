@@ -31,7 +31,5 @@ public class Compat {
         public static Item.Properties makeDrink() {
             return new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE);
         }
-
-
     }
 }

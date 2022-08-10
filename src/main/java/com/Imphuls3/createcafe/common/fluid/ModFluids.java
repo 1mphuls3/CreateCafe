@@ -709,6 +709,20 @@ public class ModFluids {
                     .bucket()
                     .build()
                     .register();
+    public static FluidEntry<ForgeFlowingFluid.Flowing> BARBERRY_TEA =
+            REGISTRATE.fluid("barberry_tea", FLUID_STILL_RL, FLUID_FLOWING_RL)
+                    .lang(f -> "block.createcafe.barberry_tea", "Barberry Milk Tea")
+                    .attributes(b -> b.viscosity(1000)
+                            .density(1400)
+                            .color(0xc8a1153c))
+                    .properties(p -> p.levelDecreasePerBlock(2)
+                            .tickRate(15)
+                            .slopeFindDistance(6)
+                            .explosionResistance(100f))
+                    .source(ForgeFlowingFluid.Source::new)
+                    .bucket()
+                    .build()
+                    .register();
     public static void register(IEventBus eventBus){
         FLUIDS.register(eventBus);
     }

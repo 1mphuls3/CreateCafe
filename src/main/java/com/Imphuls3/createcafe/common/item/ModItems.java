@@ -139,6 +139,8 @@ public class ModItems {
             () -> new CafeDrink((Compat.PH2TREESLOADED ? Compat.Loaded.makeDrink().food(ModFoods.RES_DRINK) : HIDDEN_PROPERTIES()), "res"));
     public static final RegistryObject<CafeDrink> LAVENDER_TEA = ITEMS.register("lavender_milk_tea",
             () -> new CafeDrink((Compat.BOPLOADED ? Compat.Loaded.makeDrink().food(ModFoods.RES_DRINK) : HIDDEN_PROPERTIES()), "res"));
+    public static final RegistryObject<CafeDrink> BARBERRY_TEA = ITEMS.register("barberry_milk_tea",
+            () -> new CafeDrink((Compat.POWDERRELOADED ? Compat.Loaded.makeDrink().food(ModFoods.RES_DRINK) : HIDDEN_PROPERTIES()), "res"));
     public static final RegistryObject<CafeDrink> CITRON_TEA = ITEMS.register("citron_milk_tea",
             () -> new CafeDrink((Compat.FRUITTREESLOADED ? Compat.Loaded.makeDrink().food(ModFoods.RES_DRINK) : HIDDEN_PROPERTIES()), "res"));
 
