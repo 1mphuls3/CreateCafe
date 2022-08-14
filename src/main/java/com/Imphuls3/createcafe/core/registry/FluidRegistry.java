@@ -1,4 +1,4 @@
-package com.Imphuls3.createcafe.common.fluid;
+package com.Imphuls3.createcafe.core.registry;
 
 import com.Imphuls3.createcafe.CreateCafe;
 import com.Imphuls3.createcafe.common.item.ModCreativeModeTab;
@@ -12,7 +12,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 
 @SuppressWarnings("all")
-public class ModFluids {
+public class FluidRegistry {
     public static final Registrate REGISTRATE = Registrate.create(CreateCafe.MOD_ID)
             .creativeModeTab(() -> ModCreativeModeTab.CREATE_CAFE);
 

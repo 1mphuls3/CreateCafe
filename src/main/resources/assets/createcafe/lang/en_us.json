@@ -3,6 +3,7 @@
   "block.createcafe.filling": "Filling",
 
   "tooltip.createcafe.res": "Resistance (0:12)",
+  "tooltip.createcafe.fire_res": "Fire Resistance (0:12)",
   "tooltip.createcafe.regen": "Regeneration (0:13)",
   "tooltip.createcafe.strength": "Strength (0:10)",
   "tooltip.createcafe.speed": "Speed (0:13)",

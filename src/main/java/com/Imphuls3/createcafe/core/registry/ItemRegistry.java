@@ -1,7 +1,7 @@
-package com.Imphuls3.createcafe.common.item;
+package com.Imphuls3.createcafe.core.registry;
 
 import com.Imphuls3.createcafe.CreateCafe;
-import com.Imphuls3.createcafe.common.block.ModBlocks;
+import com.Imphuls3.createcafe.common.item.ModCreativeModeTab;
 import com.Imphuls3.createcafe.common.item.foods.*;
 import com.Imphuls3.createcafe.compat.Compat;
 import net.minecraft.world.item.Item;
@@ -11,7 +11,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
-public class ModItems {
+public class ItemRegistry {
 
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, CreateCafe.MOD_ID);
@@ -139,10 +139,11 @@ public class ModItems {
             () -> new CafeDrink((Compat.PH2TREESLOADED ? Compat.Loaded.makeDrink().food(ModFoods.RES_DRINK) : HIDDEN_PROPERTIES()), "res"));
     public static final RegistryObject<CafeDrink> LAVENDER_TEA = ITEMS.register("lavender_milk_tea",
             () -> new CafeDrink((Compat.BOPLOADED ? Compat.Loaded.makeDrink().food(ModFoods.RES_DRINK) : HIDDEN_PROPERTIES()), "res"));
-    public static final RegistryObject<CafeDrink> BARBERRY_TEA = ITEMS.register("barberry_milk_tea",
-            () -> new CafeDrink((Compat.POWDERRELOADED ? Compat.Loaded.makeDrink().food(ModFoods.RES_DRINK) : HIDDEN_PROPERTIES()), "res"));
     public static final RegistryObject<CafeDrink> CITRON_TEA = ITEMS.register("citron_milk_tea",
             () -> new CafeDrink((Compat.FRUITTREESLOADED ? Compat.Loaded.makeDrink().food(ModFoods.RES_DRINK) : HIDDEN_PROPERTIES()), "res"));
+
+    public static final RegistryObject<CafeDrink> BARBERRY_TEA = ITEMS.register("barberry_milk_tea",
+            () -> new CafeDrink((Compat.POWDERRELOADED ? Compat.Loaded.makeDrink().food(ModFoods.FIRE_RES) : HIDDEN_PROPERTIES()), "fire_res"));
 
     public static final RegistryObject<CafeDrink> OREO_TEA = ITEMS.register("oreo_milk_tea",
             () -> new CafeDrink(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ModFoods.SUPER_DRINK), "super"));
@@ -169,14 +170,14 @@ public class ModItems {
             () -> new Item(new Item.Properties().food(ModFoods.COFFEE_FRUIT).tab(ModCreativeModeTab.CREATE_CAFE)));
 
     public static final RegistryObject<Item> COFFEE_BEANS = ITEMS.register("coffee_beans",
-            () -> new ItemNameBlockItem(ModBlocks.COFFEE.get(),
+            () -> new ItemNameBlockItem(BlockRegistry.COFFEE.get(),
                     new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ModFoods.COFFEE)));
 
     public static final RegistryObject<Item> ROASTED_COFFEE = ITEMS.register("roasted_coffee",
             () -> new Item(new Item.Properties().food(ModFoods.ROASTED_COFFEE).tab(ModCreativeModeTab.CREATE_CAFE)));
 
     public static final RegistryObject<Item> CASSAVA_SEEDS = ITEMS.register("cassava_seeds",
-            () -> new ItemNameBlockItem(ModBlocks.CASSAVA.get(),
+            () -> new ItemNameBlockItem(BlockRegistry.CASSAVA.get(),
                     new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE)));
 
     public static final RegistryObject<Item> CASSAVA_ROOT = ITEMS.register("cassava_root",

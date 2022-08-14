@@ -1,10 +1,11 @@
 package com.Imphuls3.createcafe;
 
-import com.Imphuls3.createcafe.common.block.ModBlocks;
+import com.Imphuls3.createcafe.core.registry.BlockRegistry;
 import com.Imphuls3.createcafe.compat.Compat;
-import com.Imphuls3.createcafe.config.Config;
-import com.Imphuls3.createcafe.common.fluid.ModFluids;
-import com.Imphuls3.createcafe.common.item.ModItems;
+import com.Imphuls3.createcafe.config.ConfigRegistry;
+import com.Imphuls3.createcafe.core.registry.CompostRegistry;
+import com.Imphuls3.createcafe.core.registry.FluidRegistry;
+import com.Imphuls3.createcafe.core.registry.ItemRegistry;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.world.level.block.Blocks;
@@ -33,10 +34,11 @@ public class CreateCafe
         eventBus.addListener(this::setup);
         eventBus.addListener(this::doClientStuff);
 
-        ModItems.register(eventBus);
-        ModFluids.register(eventBus);
-        ModBlocks.register(eventBus);
-        Config.register();
+        ItemRegistry.register(eventBus);
+        FluidRegistry.register(eventBus);
+        BlockRegistry.register(eventBus);
+        ConfigRegistry.register();
+        CompostRegistry.register();
 
         Compat.init();
         // Register ourselves for server and other game events we are interested in
@@ -52,8 +54,8 @@ public class CreateCafe
 
     private void doClientStuff(final FMLClientSetupEvent event) {
         event.enqueueWork(() -> {
-            ItemBlockRenderTypes.setRenderLayer(ModBlocks.CASSAVA.get(), RenderType.cutout());
-            ItemBlockRenderTypes.setRenderLayer(ModBlocks.COFFEE.get(), RenderType.cutout());
+            ItemBlockRenderTypes.setRenderLayer(BlockRegistry.CASSAVA.get(), RenderType.cutout());
+            ItemBlockRenderTypes.setRenderLayer(BlockRegistry.COFFEE.get(), RenderType.cutout());
         });
     }
 }

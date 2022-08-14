@@ -4,7 +4,7 @@ import net.minecraftforge.common.ForgeConfigSpec;
 import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.config.ModConfig;
 
-public class Config {
+public class ConfigRegistry {
     public static void register() {
         registerServerConfigs();
         registerCommonConfigs();

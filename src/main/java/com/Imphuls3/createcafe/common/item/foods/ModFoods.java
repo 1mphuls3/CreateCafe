@@ -24,6 +24,10 @@ public class ModFoods {
             .effect(new MobEffectInstance(MobEffects.REGENERATION, 260, 1), 1.0F)
             .nutrition(8).saturationMod(0.2F).build();
 
+    public static final FoodProperties FIRE_RES = (new FoodProperties.Builder())
+            .effect(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 240, 1), 1.0F)
+            .nutrition(8).saturationMod(0.2F).build();
+
     public static final FoodProperties RES_DRINK = (new FoodProperties.Builder())
             .effect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 240, 0), 1.0F)
             .nutrition(8).saturationMod(0.2F).build();

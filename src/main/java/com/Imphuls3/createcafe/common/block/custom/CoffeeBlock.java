@@ -1,6 +1,6 @@
 package com.Imphuls3.createcafe.common.block.custom;
 
-import com.Imphuls3.createcafe.common.item.ModItems;
+import com.Imphuls3.createcafe.core.registry.ItemRegistry;
 import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.CropBlock;
 
@@ -11,6 +11,6 @@ public class CoffeeBlock extends CropBlock {
 
     @Override
     protected ItemLike getBaseSeedId() {
-        return ModItems.COFFEE_BEANS.get();
+        return ItemRegistry.COFFEE_BEANS.get();
     }
 }
