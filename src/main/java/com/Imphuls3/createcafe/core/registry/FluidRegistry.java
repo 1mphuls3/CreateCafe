@@ -2,12 +2,12 @@ package com.Imphuls3.createcafe.core.registry;
 
 import com.Imphuls3.createcafe.CreateCafe;
 import com.Imphuls3.createcafe.common.item.ModCreativeModeTab;
-import com.simibubi.create.repack.registrate.Registrate;
+import com.tterrag.registrate.Registrate;
+import com.tterrag.registrate.util.entry.FluidEntry;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.material.Fluid;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fluids.ForgeFlowingFluid;
-import com.simibubi.create.repack.registrate.util.entry.FluidEntry;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 
