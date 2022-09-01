@@ -1,5 +1,11 @@
 {
   "type": "create:mixing",
+  "conditions": [
+    {
+      "modid": "biomesoplenty",
+      "type": "forge:mod_loaded"
+    }
+  ],
   "ingredients": [
     {
       "item": "biomesoplenty:lavender"

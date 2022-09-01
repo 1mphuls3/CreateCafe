@@ -1,5 +1,15 @@
 {
   "type": "create:mixing",
+  "conditions": [
+    {
+      "value":
+      {
+        "tag": "forge:fruits/pineapple",
+        "type": "forge:tag_empty"
+      },
+      "type": "forge:not"
+    }
+  ],
   "ingredients": [
     {
       "tag": "forge:fruits/pineapple"

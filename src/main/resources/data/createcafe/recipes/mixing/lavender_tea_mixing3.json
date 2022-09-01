@@ -1,5 +1,11 @@
 {
   "type": "create:mixing",
+  "conditions": [
+    {
+      "modid": "abundance",
+      "type": "forge:mod_loaded"
+    }
+  ],
   "ingredients": [
     {
       "item": "abundance:lavender"

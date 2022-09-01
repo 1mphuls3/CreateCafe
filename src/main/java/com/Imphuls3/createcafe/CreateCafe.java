@@ -43,12 +43,12 @@ public class CreateCafe {
 
     private void commonSetup(FMLCommonSetupEvent event) {
         CreateCafe.LOGGER.debug("common setup");
-        CompostRegistry.register();
+        event.enqueueWork(() -> {
+            CompostRegistry.register();
+        });
     }
 
     private void setup(final FMLCommonSetupEvent event) {
-        LOGGER.info("HELLO FROM PREINIT");
-        LOGGER.info("DIRT BLOCK >> {}", Blocks.DIRT.getRegistryName());
     }
 
     private void doClientStuff(final FMLClientSetupEvent event) {

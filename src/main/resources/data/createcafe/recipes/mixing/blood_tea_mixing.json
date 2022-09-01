@@ -1,5 +1,11 @@
 {
   "type": "create:mixing",
+  "conditions": [
+    {
+      "modid": "bloodmagic",
+      "type": "forge:mod_loaded"
+    }
+  ],
   "ingredients": [
     {
       "item": "createcafe:blood_orange"
