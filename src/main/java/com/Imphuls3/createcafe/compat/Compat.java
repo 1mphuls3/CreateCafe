@@ -14,6 +14,7 @@ public class Compat {
     public static boolean BOTANIALOADED;
     public static boolean BYGLOADED;
     public static boolean BOPLOADED;
+    public static boolean NEAPOLITANLOADED;
 
     public static void init() {
         FRUITTREESLOADED = ModList.get().isLoaded("fruittrees");
@@ -25,6 +26,7 @@ public class Compat {
         BOTANIALOADED = ModList.get().isLoaded("botania");
         BYGLOADED = ModList.get().isLoaded("byg");
         BOPLOADED = ModList.get().isLoaded("biomesoplenty");
+        NEAPOLITANLOADED = ModList.get().isLoaded("neapolitan");
     }
 
     public static class Loaded {

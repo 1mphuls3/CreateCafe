@@ -4,11 +4,14 @@ import com.Imphuls3.createcafe.core.registry.ItemRegistry;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.TranslatableComponent;
+import net.minecraft.sounds.SoundEvent;
+import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.item.UseAnim;
 import net.minecraft.world.level.Level;
 import org.jetbrains.annotations.Nullable;
 
@@ -16,6 +19,7 @@ import java.util.List;
 
 public class CafeDrink extends Item {
     String type;
+
     public CafeDrink(Properties properties, String type) {
         super(properties);
         this.type = type;
@@ -30,5 +34,15 @@ public class CafeDrink extends Item {
     public ItemStack finishUsingItem(ItemStack stack, Level level, LivingEntity livingEntity) {
         ItemStack itemstack = super.finishUsingItem(stack, level, livingEntity);
         return livingEntity instanceof Player && ((Player)livingEntity).getAbilities().instabuild ? itemstack : new ItemStack(ItemRegistry.EMPTY_BOBA_CUP.get());
+    }
+
+    @Override
+    public UseAnim getUseAnimation(ItemStack pStack) {
+        return UseAnim.DRINK;
+    }
+
+    @Override
+    public SoundEvent getDrinkingSound() {
+        return SoundEvents.GENERIC_DRINK;
     }
 }
