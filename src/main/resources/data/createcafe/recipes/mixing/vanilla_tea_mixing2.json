@@ -1,8 +1,14 @@
 {
   "type": "create:mixing",
+  "conditions": [
+    {
+      "modid": "neapolitan",
+      "type": "forge:mod_loaded"
+    }
+  ],
   "ingredients": [
     {
-      "tag": "minecraft:melon_slice"
+      "tag": "neapolitan:dried_vanilla_pods"
     },
     {
       "fluidTag": "forge:milk",
@@ -15,7 +21,7 @@
   ],
   "results": [
     {
-      "fluid": "createcafe:watermelon_tea",
+      "fluid": "createcafe:vanilla_tea",
       "amount": 500
     }
   ],
