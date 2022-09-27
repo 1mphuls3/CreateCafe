@@ -1,7 +1,6 @@
 package com.Imphuls3.createcafe.core.registry;
 
 import net.minecraft.world.level.block.ComposterBlock;
-import com.Imphuls3.createcafe.core.registry.ItemRegistry;
 
 public class CompostRegistry {
     public static void register() {

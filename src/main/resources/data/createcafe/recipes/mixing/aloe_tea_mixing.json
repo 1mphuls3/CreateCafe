@@ -1,5 +1,6 @@
 {
   "type": "create:mixing",
+  "heatRequirement": "heated",
   "conditions": [
     {
       "modid": "atmospheric",
@@ -11,19 +12,18 @@
       "item": "atmospheric:aloe_leaves"
     },
     {
-      "fluidTag": "forge:milk",
-      "amount": 250
+      "amount": 250,
+      "fluidTag": "forge:milk"
     },
     {
-      "fluid": "createcafe:melted_sugar",
-      "amount": 250
+      "amount": 250,
+      "fluid": "createcafe:melted_sugar"
     }
   ],
   "results": [
     {
-      "fluid": "createcafe:aloe_tea",
-      "amount": 500
+      "amount": 500,
+      "fluid": "createcafe:aloe_tea"
     }
-  ],
-  "heatRequirement": "heated"
+  ]
 }

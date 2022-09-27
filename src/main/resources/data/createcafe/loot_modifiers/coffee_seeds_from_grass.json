@@ -1,11 +1,26 @@
 {
-  "type": "createcafe:loot_modifier",
+  "type": "createcafe:add_item",
   "conditions": [
     {
-      "condition": "block_state_property",
+      "condition": "minecraft:random_chance",
+      "chance": 0.02
+    },
+    {
+      "condition": "minecraft:block_state_property",
       "block": "minecraft:grass"
+    },
+    {
+      "condition": "minecraft:inverted",
+      "term": {
+        "condition": "minecraft:match_tool",
+        "predicate": {
+          "items": [
+            "minecraft:shears"
+          ]
+        }
+      }
     }
   ],
-  "addition": "createcafe:coffee",
-  "type": "createcafe:coffee_seeds_from_grass"
+  "item": "createcafe:coffee_seeds",
+  "count": 1
 }
