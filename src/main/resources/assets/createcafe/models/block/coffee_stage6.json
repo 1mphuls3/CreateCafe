@@ -2,5 +2,6 @@
   "parent": "minecraft:block/crop",
   "textures": {
     "crop": "createcafe:block/coffee_stage6"
-  }
+  },
+  "render_type": "cutout"
 }

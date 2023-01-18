@@ -22,7 +22,7 @@
             },
             {
               "type": "minecraft:item",
-              "name": "createcafe:coffee"
+              "name": "createcafe:coffee_beans"
             }
           ]
         }
@@ -73,7 +73,7 @@
               }
             }
           ],
-          "name": "createcafe:coffee"
+          "name": "createcafe:coffee_beans"
         }
       ],
       "conditions": [

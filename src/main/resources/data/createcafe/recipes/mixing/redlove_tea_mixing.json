@@ -2,17 +2,13 @@
   "type": "create:mixing",
   "conditions": [
     {
-      "value":
-      {
-        "tag": "forge:fruits/redlove",
-        "type": "forge:tag_empty"
-      },
-      "type": "forge:not"
+      "modid": "fruittrees",
+      "type": "forge:mod_loaded"
     }
   ],
   "ingredients": [
     {
-      "tag": "forge:fruits/redlove"
+      "item": "fruittrees:redlove"
     },
     {
       "fluidTag": "forge:milk",

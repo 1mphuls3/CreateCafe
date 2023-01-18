@@ -1,8 +1,14 @@
 {
   "type": "create:mixing",
+  "conditions": [
+    {
+      "modid": "croptopia",
+      "type": "forge:mod_loaded"
+    }
+  ],
   "ingredients": [
     {
-      "item": "minecraft:melon_slice"
+      "tag": "croptopia:vanilla"
     },
     {
       "fluidTag": "forge:milk",
@@ -15,7 +21,7 @@
   ],
   "results": [
     {
-      "fluid": "createcafe:watermelon_tea",
+      "fluid": "createcafe:vanilla_tea",
       "amount": 500
     }
   ],

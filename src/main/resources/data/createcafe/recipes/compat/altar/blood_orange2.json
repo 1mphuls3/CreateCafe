@@ -1,5 +1,11 @@
 {
   "type": "bloodmagic:altar",
+  "conditions": [
+    {
+      "modid": "bloodmagic",
+      "type": "forge:mod_loaded"
+    }
+  ],
   "input": {
     "item": "minecraft:apple"
   },

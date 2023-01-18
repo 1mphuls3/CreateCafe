@@ -12,7 +12,6 @@ public class ConfigRegistry {
     }
 
     private static void registerClientConfigs() {
-
     }
 
     private static void registerCommonConfigs() {

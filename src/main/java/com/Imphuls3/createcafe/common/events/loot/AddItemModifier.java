@@ -16,27 +16,27 @@ import org.jetbrains.annotations.NotNull;
 import java.util.function.Supplier;
 
 public class AddItemModifier extends LootModifier {
+
     public static final Supplier<Codec<AddItemModifier>> CODEC = Suppliers.memoize(() ->
-            RecordCodecBuilder.create(instance ->
-                    instance.group(LOOT_CONDITIONS_CODEC.fieldOf("conditions").forGetter(lm -> lm.conditions),
-                            ForgeRegistries.ITEMS.getCodec().fieldOf("item").forGetter(lm -> lm.addition),
+            RecordCodecBuilder.create( instance ->
+                    instance.group(
+                            LOOT_CONDITIONS_CODEC.fieldOf("conditions").forGetter(lm -> lm.conditions),
+                            ForgeRegistries.ITEMS.getCodec().fieldOf("item").forGetter(lm -> lm.addedItem),
                             Codec.intRange(0, Integer.MAX_VALUE).fieldOf("count").forGetter((lm) -> lm.count)
                     ).apply(instance, AddItemModifier::new)));
 
-    private final Item addition;
+    private final Item addedItem;
     private final int count;
 
-    protected AddItemModifier(LootItemCondition[] conditionsIn, Item addition, int count) {
+    protected AddItemModifier(LootItemCondition[] conditionsIn, Item addedItemIn, int count) {
         super(conditionsIn);
-        this.addition = addition;
+        this.addedItem = addedItemIn;
         this.count = count;
     }
 
     @Override
-    protected @NotNull ObjectArrayList<ItemStack> doApply(ObjectArrayList<ItemStack> generatedLoot, LootContext context) {
-        if(context.getRandom().nextFloat() > 0.95f) {
-            generatedLoot.add(new ItemStack(addition, 1));
-        }
+    protected ObjectArrayList<ItemStack> doApply(ObjectArrayList<ItemStack> generatedLoot, LootContext context) {
+        generatedLoot.add(new ItemStack(this.addedItem, count));
         return generatedLoot;
     }
 

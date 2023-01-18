@@ -1,4 +1,4 @@
-package com.Imphuls3.createcafe.common.block.custom;
+package com.Imphuls3.createcafe.common.block;
 
 import com.Imphuls3.createcafe.core.registry.ItemRegistry;
 import net.minecraft.world.level.ItemLike;

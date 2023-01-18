@@ -1,6 +1,6 @@
 package com.Imphuls3.createcafe.compat;
 
-import com.Imphuls3.createcafe.common.item.ModCreativeModeTab;
+import com.Imphuls3.createcafe.common.item.CreateCafeTab;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.fml.ModList;
 
@@ -16,6 +16,7 @@ public class Compat {
     public static boolean BOPLOADED;
     public static boolean NEAPOLITANLOADED;
     public static boolean CULTURALDELIGHTSLOADED;
+    public static boolean ATMOSPHERICLOADED;
 
     public static void init() {
         FRUITTREESLOADED = ModList.get().isLoaded("fruittrees");
@@ -29,11 +30,12 @@ public class Compat {
         BOPLOADED = ModList.get().isLoaded("biomesoplenty");
         NEAPOLITANLOADED = ModList.get().isLoaded("neapolitan");
         CULTURALDELIGHTSLOADED = ModList.get().isLoaded("culturaldelights");
+        ATMOSPHERICLOADED = ModList.get().isLoaded("atmospheric");
     }
 
     public static class Loaded {
         public static Item.Properties makeDrink() {
-            return new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE);
+            return new Item.Properties().tab(CreateCafeTab.CREATE_CAFE);
         }
     }
 }

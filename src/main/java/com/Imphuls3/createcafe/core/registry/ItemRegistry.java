@@ -1,7 +1,7 @@
 package com.Imphuls3.createcafe.core.registry;
 
 import com.Imphuls3.createcafe.CreateCafe;
-import com.Imphuls3.createcafe.common.item.ModCreativeModeTab;
+import com.Imphuls3.createcafe.common.item.CreateCafeTab;
 import com.Imphuls3.createcafe.common.item.foods.*;
 import com.Imphuls3.createcafe.compat.Compat;
 import net.minecraft.world.item.Item;
@@ -22,29 +22,29 @@ public class ItemRegistry {
 
     //Food Items:
     public static final RegistryObject<Item> MANA_BERRIES = ITEMS.register("mana_berries",
-            () -> new Item(new Item.Properties().food(ModFoods.MANA_BERRIES).tab(ModCreativeModeTab.CREATE_CAFE)));
+            () -> new Item(Compat.BOTANIALOADED ? new Item.Properties().food(ModFoods.MANA_BERRIES).tab(CreateCafeTab.CREATE_CAFE) : HIDDEN_PROPERTIES()));
 
     public static final RegistryObject<Item> OREO = ITEMS.register("oreo",
-            () -> new Item(new Item.Properties().food(ModFoods.OREO).tab(ModCreativeModeTab.CREATE_CAFE)));
+            () -> new Item(new Item.Properties().food(ModFoods.OREO).tab(CreateCafeTab.CREATE_CAFE)));
 
     public static final RegistryObject<Item> OREO_INCOMPLETE = ITEMS.register("oreo_incomplete",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE)));
+            () -> new Item(HIDDEN_PROPERTIES()));
 
     public static final RegistryObject<Item> OREO_HALF_RAW = ITEMS.register("oreo_half_raw",
-            () -> new Item(new Item.Properties().food(ModFoods.OREO_HALF_RAW).tab(ModCreativeModeTab.CREATE_CAFE)));
+            () -> new Item(new Item.Properties().food(ModFoods.OREO_HALF_RAW).tab(CreateCafeTab.CREATE_CAFE)));
 
     public static final RegistryObject<Item> OREO_HALF = ITEMS.register("oreo_half",
             () -> new Item(new Item.Properties().food(ModFoods.OREO_HALF)
-                    .tab(ModCreativeModeTab.CREATE_CAFE)));
+                    .tab(CreateCafeTab.CREATE_CAFE)));
 
     public static final RegistryObject<Item> OREO_DOUGH = ITEMS.register("oreo_dough",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE)));
+            () -> new Item(new Item.Properties().tab(CreateCafeTab.CREATE_CAFE)));
 
     public static final RegistryObject<Item> CRUSHED_OREO = ITEMS.register("oreo_crushed",
-            () -> new Item(new Item.Properties().food(ModFoods.CRUSHED_OREO).tab(ModCreativeModeTab.CREATE_CAFE)));
+            () -> new Item(new Item.Properties().food(ModFoods.CRUSHED_OREO).tab(CreateCafeTab.CREATE_CAFE)));
 
     public static final RegistryObject<Item> BLOOD_ORANGE = ITEMS.register("blood_orange",
-            () -> new Item(new Item.Properties().food(ModFoods.BLOOD_ORANGE).tab(ModCreativeModeTab.CREATE_CAFE)));
+            () -> new Item(Compat.BLOODMAGICLOADED ? new Item.Properties().food(ModFoods.BLOOD_ORANGE).tab(CreateCafeTab.CREATE_CAFE) : HIDDEN_PROPERTIES()));
     //Drink Items:
     public static final RegistryObject<CafeDrink> MANGO_TEA = ITEMS.register("mango_milk_tea",
             () -> new CafeDrink((Compat.PH2TREESLOADED || Compat.CROPTOPIALOADED ? Compat.Loaded.makeDrink().food(ModFoods.SPEED_DRINK) : HIDDEN_PROPERTIES()), "speed"));
@@ -82,13 +82,13 @@ public class ItemRegistry {
     public static final RegistryObject<CafeDrink> PINEAPPLE_TEA = ITEMS.register("pineapple_milk_tea",
             () -> new CafeDrink((Compat.PH2CROPSSLOADED || Compat.CROPTOPIALOADED ? Compat.Loaded.makeDrink().food(ModFoods.REGEN_DRINK) : HIDDEN_PROPERTIES()), "regen"));
     public static final RegistryObject<CafeDrink> APPLE_TEA = ITEMS.register("apple_milk_tea",
-            () -> new CafeDrink(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ModFoods.REGEN_DRINK), "regen"));
+            () -> new CafeDrink(new Item.Properties().tab(CreateCafeTab.CREATE_CAFE).food(ModFoods.REGEN_DRINK), "regen"));
     public static final RegistryObject<CafeDrink> PUMPKIN_TEA = ITEMS.register("pumpkin_milk_tea",
-            () -> new CafeDrink(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ModFoods.REGEN_DRINK), "regen"));
+            () -> new CafeDrink(new Item.Properties().tab(CreateCafeTab.CREATE_CAFE).food(ModFoods.REGEN_DRINK), "regen"));
     public static final RegistryObject<CafeDrink> AVOCADO_TEA = ITEMS.register("avocado_milk_tea",
             () -> new CafeDrink((Compat.PH2TREESLOADED || Compat.CULTURALDELIGHTSLOADED || Compat.CROPTOPIALOADED ? Compat.Loaded.makeDrink().food(ModFoods.REGEN_DRINK) : HIDDEN_PROPERTIES()), "regen"));
     public static final RegistryObject<CafeDrink> SWEETBERRY_TEA = ITEMS.register("sweetberry_milk_tea",
-            () -> new CafeDrink(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ModFoods.REGEN_DRINK), "regen"));
+            () -> new CafeDrink(new Item.Properties().tab(CreateCafeTab.CREATE_CAFE).food(ModFoods.REGEN_DRINK), "regen"));
     public static final RegistryObject<CafeDrink> TAMARIND_TEA = ITEMS.register("tamarind_milk_tea",
             () -> new CafeDrink((Compat.PH2TREESLOADED ? Compat.Loaded.makeDrink().food(ModFoods.REGEN_DRINK) : HIDDEN_PROPERTIES()), "regen"));
     public static final RegistryObject<CafeDrink> PAPAYA_TEA = ITEMS.register("papaya_milk_tea",
@@ -103,7 +103,7 @@ public class ItemRegistry {
     public static final RegistryObject<CafeDrink> ORANGE_TEA = ITEMS.register("orange_milk_tea",
             () -> new CafeDrink((Compat.PH2TREESLOADED || Compat.CROPTOPIALOADED ? Compat.Loaded.makeDrink().food(ModFoods.STRENGTH_DRINK) : HIDDEN_PROPERTIES()), "strength"));
     public static final RegistryObject<CafeDrink> YUCCA_TEA = ITEMS.register("yucca_milk_tea",
-            () -> new CafeDrink(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ModFoods.STRENGTH_DRINK), "strength"));
+            () -> new CafeDrink(Compat.POWDERRELOADED ? new Item.Properties().tab(CreateCafeTab.CREATE_CAFE).food(ModFoods.STRENGTH_DRINK) : HIDDEN_PROPERTIES(), "strength"));
     public static final RegistryObject<CafeDrink> ALOE_TEA = ITEMS.register("aloe_milk_tea",
             () -> new CafeDrink((Compat.BYGLOADED || Compat.PH2CROPSSLOADED ? Compat.Loaded.makeDrink().food(ModFoods.STRENGTH_DRINK) : HIDDEN_PROPERTIES()), "strength"));
     public static final RegistryObject<CafeDrink> COCONUT_TEA = ITEMS.register("coconut_milk_tea",
@@ -120,7 +120,7 @@ public class ItemRegistry {
     public static final RegistryObject<CafeDrink> LEMON_TEA = ITEMS.register("lemon_milk_tea",
             () -> new CafeDrink((Compat.CROPTOPIALOADED || Compat.PH2TREESLOADED ? Compat.Loaded.makeDrink().food(ModFoods.RES_DRINK) : HIDDEN_PROPERTIES()), "res"));
     public static final RegistryObject<CafeDrink> WATERMELON_TEA = ITEMS.register("watermelon_milk_tea",
-            () -> new CafeDrink(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ModFoods.RES_DRINK), "res"));
+            () -> new CafeDrink(new Item.Properties().tab(CreateCafeTab.CREATE_CAFE).food(ModFoods.RES_DRINK), "res"));
     public static final RegistryObject<CafeDrink> VANILLA_TEA = ITEMS.register("vanilla_milk_tea",
             () -> new CafeDrink((Compat.CROPTOPIALOADED || Compat.NEAPOLITANLOADED || Compat.PH2TREESLOADED ? Compat.Loaded.makeDrink().food(ModFoods.RES_DRINK) : HIDDEN_PROPERTIES()), "res"));
     public static final RegistryObject<CafeDrink> BANANA_TEA = ITEMS.register("banana_milk_tea",
@@ -146,42 +146,42 @@ public class ItemRegistry {
             () -> new CafeDrink((Compat.POWDERRELOADED ? Compat.Loaded.makeDrink().food(ModFoods.FIRE_RES) : HIDDEN_PROPERTIES()), "fire_res"));
 
     public static final RegistryObject<CafeDrink> OREO_TEA = ITEMS.register("oreo_milk_tea",
-            () -> new CafeDrink(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ModFoods.SUPER_DRINK), "super"));
+            () -> new CafeDrink(new Item.Properties().tab(CreateCafeTab.CREATE_CAFE).food(ModFoods.SUPER_DRINK), "super"));
 
     //Non Food Items:
     public static final RegistryObject<Item> BOBA_CUP = ITEMS.register("boba_cup",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE)));
+            () -> new Item(new Item.Properties().tab(CreateCafeTab.CREATE_CAFE)));
 
     public static final RegistryObject<Item> EMPTY_BOBA_CUP = ITEMS.register("empty_boba_cup",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE)));
+            () -> new Item(new Item.Properties().tab(CreateCafeTab.CREATE_CAFE)));
 
     //Boba:
     public static final RegistryObject<Item> BOBA = ITEMS.register("boba",
-            () -> new Item(new Item.Properties().food(ModFoods.BOBA).tab(ModCreativeModeTab.CREATE_CAFE)));
+            () -> new Item(new Item.Properties().food(ModFoods.BOBA).tab(CreateCafeTab.CREATE_CAFE)));
 
     public static final RegistryObject<Item> RAW_BOBA = ITEMS.register("raw_boba",
-            () -> new Item(new Item.Properties().food(ModFoods.RAW_BOBA).tab(ModCreativeModeTab.CREATE_CAFE)));
+            () -> new Item(new Item.Properties().food(ModFoods.RAW_BOBA).tab(CreateCafeTab.CREATE_CAFE)));
 
     public static final RegistryObject<Item> TAPIOCA_FLOUR = ITEMS.register("tapioca_flour",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE)));
+            () -> new Item(new Item.Properties().tab(CreateCafeTab.CREATE_CAFE)));
 
     //Crop Items:
     public static final RegistryObject<Item> COFFEE_FRUIT = ITEMS.register("coffee_fruit",
-            () -> new Item(new Item.Properties().food(ModFoods.COFFEE_FRUIT).tab(ModCreativeModeTab.CREATE_CAFE)));
+            () -> new Item(new Item.Properties().food(ModFoods.COFFEE_FRUIT).tab(CreateCafeTab.CREATE_CAFE)));
 
     public static final RegistryObject<Item> COFFEE_BEANS = ITEMS.register("coffee_beans",
             () -> new ItemNameBlockItem(BlockRegistry.COFFEE.get(),
-                    new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE).food(ModFoods.COFFEE)));
+                    new Item.Properties().tab(CreateCafeTab.CREATE_CAFE).food(ModFoods.COFFEE)));
 
     public static final RegistryObject<Item> ROASTED_COFFEE = ITEMS.register("roasted_coffee",
-            () -> new Item(new Item.Properties().food(ModFoods.ROASTED_COFFEE).tab(ModCreativeModeTab.CREATE_CAFE)));
+            () -> new Item(new Item.Properties().food(ModFoods.ROASTED_COFFEE).tab(CreateCafeTab.CREATE_CAFE)));
 
     public static final RegistryObject<Item> CASSAVA_SEEDS = ITEMS.register("cassava_seeds",
             () -> new ItemNameBlockItem(BlockRegistry.CASSAVA.get(),
-                    new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE)));
+                    new Item.Properties().tab(CreateCafeTab.CREATE_CAFE)));
 
     public static final RegistryObject<Item> CASSAVA_ROOT = ITEMS.register("cassava_root",
-            () -> new Item(new Item.Properties().food(ModFoods.CASSAVA_ROOT).tab(ModCreativeModeTab.CREATE_CAFE)));
+            () -> new Item(new Item.Properties().food(ModFoods.CASSAVA_ROOT).tab(CreateCafeTab.CREATE_CAFE)));
 
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
