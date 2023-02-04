@@ -3,6 +3,7 @@
   "fluid.createcafe.filling": "奥利奥馅料",
   
   "tooltip.createcafe.res": "抗性提升 (0:12)",
+  "tooltip.createcafe.fire_res": "抗火 (0:12)",
   "tooltip.createcafe.regen": "再生 (0:13)",
   "tooltip.createcafe.strength": "力量 (0:10)",
   "tooltip.createcafe.speed": "速度 (0:13)",
@@ -59,6 +60,7 @@
   "item.createcafe.pomelo_tea_bucket": "柚子奶茶桶",
   "item.createcafe.redlove_tea_bucket": "红肉苹果奶茶桶",
   "item.createcafe.mandarin_tea_bucket": "柑橘奶茶桶",
+  "item.createcafe.barberry_tea_bucket": "伏牛花奶茶桶",
   
   "item.createcafe.mana_berries": "魔力浆果",
   "item.createcafe.oreo": "奥利奥",
@@ -177,5 +179,7 @@
   "item.createcafe.pomelo_milk_tea": "柚子奶茶",
   "fluid.createcafe.pomelo_tea": "柚子奶茶",
   "item.createcafe.mandarin_milk_tea": "柑橘奶茶",
-  "fluid.createcafe.mandarin_tea": "柑橘奶茶"
+  "fluid.createcafe.mandarin_tea": "柑橘奶茶",
+  "item.createcafe.barberry_milk_tea": "伏牛花奶茶",
+  "fluid.createcafe.barberry_tea": "伏牛花奶茶"
 }
