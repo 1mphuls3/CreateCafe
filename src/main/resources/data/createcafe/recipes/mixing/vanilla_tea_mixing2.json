@@ -8,7 +8,7 @@
   ],
   "ingredients": [
     {
-      "tag": "neapolitan:dried_vanilla_pods"
+      "item": "neapolitan:dried_vanilla_pods"
     },
     {
       "fluidTag": "forge:milk",

@@ -3,7 +3,7 @@
   "ingredient": {
     "item": "createcafe:coffee_beans"
   },
-  "result": "createcafe:roasted_coffee",
+  "result": "createcafe:roasted_coffee_beans",
   "experience": 0.0,
   "cookingtime": 100
 }

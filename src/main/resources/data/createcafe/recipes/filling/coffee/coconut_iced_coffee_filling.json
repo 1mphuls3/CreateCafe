@@ -1,0 +1,17 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "createcafe:iced_coffee"
+    },
+    {
+      "fluid": "createcafe:coconut_syrup",
+      "amount": 250
+    }
+  ],
+  "results": [
+    {
+      "item": "createcafe:coconut_iced_coffee"
+    }
+  ]
+}

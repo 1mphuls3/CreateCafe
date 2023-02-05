@@ -1,0 +1,19 @@
+{
+  "type": "create:milling",
+  "ingredients": [
+    {
+      "item": "createcafe:roasted_coffee_beans"
+    }
+  ],
+  "results": [
+    {
+      "item": "createcafe:coffee_grounds"
+    },
+    {
+      "item": "createcafe:coffee_grounds",
+      "count": 2,
+      "chance": 0.25
+    }
+  ],
+  "processingTime": 350
+}

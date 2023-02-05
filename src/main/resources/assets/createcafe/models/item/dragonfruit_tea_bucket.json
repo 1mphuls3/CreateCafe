@@ -1,6 +1,6 @@
 {
-  "parent": "item/generated",
+  "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "createcafe:bucket/dragonfruit_tea_bucket"
+    "layer0": "createcafe:item/dragonfruit_tea_bucket"
   }
 }

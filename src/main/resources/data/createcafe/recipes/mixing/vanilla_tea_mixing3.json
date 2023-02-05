@@ -8,7 +8,7 @@
   ],
   "ingredients": [
     {
-      "tag": "croptopia:vanilla"
+      "item": "croptopia:vanilla"
     },
     {
       "fluidTag": "forge:milk",

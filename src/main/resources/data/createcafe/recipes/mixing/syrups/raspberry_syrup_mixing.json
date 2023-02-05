@@ -1,0 +1,33 @@
+{
+  "type": "create:mixing",
+  "heatRequirement": "heated",
+  "conditions": [
+    {
+      "value":
+      {
+        "tag": "forge:fruits/raspberry",
+        "type": "forge:tag_empty"
+      },
+      "type": "forge:not"
+    }
+  ],
+  "ingredients": [
+    {
+      "tag": "forge:fruits/raspberry"
+    },
+    {
+      "amount": 250,
+      "fluidTag": "minecraft:water"
+    },
+    {
+      "amount": 750,
+      "fluid": "createcafe:melted_sugar"
+    }
+  ],
+  "results": [
+    {
+      "amount": 1000,
+      "fluid": "createcafe:raspberry_syrup"
+    }
+  ]
+}

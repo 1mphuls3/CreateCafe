@@ -12,12 +12,12 @@
     {
       "item": "createcafe:tapioca_flour",
       "count": 2,
-      "chance": 0.3
+      "chance": 0.25
     },
     {
-      "item": "createcafe:tapioca_flour",
+      "item": "createcafe:cassava_seeds",
       "count": 1,
-      "chance": 0.2
+      "chance": 0.25
     }
   ],
   "processingTime": 350

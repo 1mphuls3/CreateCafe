@@ -1,0 +1,20 @@
+{
+  "type": "create:mixing",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "amount": 250,
+      "fluidTag": "forge:milk"
+    },
+    {
+      "amount": 750,
+      "fluid": "createcafe:melted_sugar"
+    }
+  ],
+  "results": [
+    {
+      "amount": 1000,
+      "fluid": "createcafe:caramel_syrup"
+    }
+  ]
+}

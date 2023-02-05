@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/crop",
-  "textures": {
-    "crop": "createcafe:block/cassava_stage5"
-  },
-  "render_type": "cutout"
-}

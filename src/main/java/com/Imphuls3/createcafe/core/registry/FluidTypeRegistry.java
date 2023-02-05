@@ -16,6 +16,7 @@ import java.awt.*;
 import java.util.function.Consumer;
 
 public class FluidTypeRegistry {
+    //I know this is bad, but I'm too lazy to figure out anything else
     public static class MeltedSugar extends TintedFluidType {
         public MeltedSugar(Properties properties, ResourceLocation stillTexture, ResourceLocation flowingTexture) {
             super(properties, stillTexture, flowingTexture, 0xc8fff7e0);
@@ -216,7 +217,44 @@ public class FluidTypeRegistry {
         public Barberry(Properties properties, ResourceLocation stillTexture, ResourceLocation flowingTexture) {
             super(properties, stillTexture, flowingTexture, 0xc8a1153c);
         }
+    }public static class Coffee extends TintedFluidType {
+        public Coffee(Properties properties, ResourceLocation stillTexture, ResourceLocation flowingTexture) {
+            super(properties, stillTexture, flowingTexture, 0xc8482713);
+        }
+    }public static class IcedCoffee extends TintedFluidType {
+        public IcedCoffee(Properties properties, ResourceLocation stillTexture, ResourceLocation flowingTexture) {
+            super(properties, stillTexture, flowingTexture, 0xc85c3721);
+        }
+    }public static class StrawberryS extends TintedFluidType {
+        public StrawberryS(Properties properties, ResourceLocation stillTexture, ResourceLocation flowingTexture) {
+            super(properties, stillTexture, flowingTexture, new Color(196, 59, 98, 199).getRGB());
+        }
+    }public static class VanillaS extends TintedFluidType {
+        public VanillaS(Properties properties, ResourceLocation stillTexture, ResourceLocation flowingTexture) {
+            super(properties, stillTexture, flowingTexture, new Color(255, 235, 220, 199).getRGB());
+        }
+    }public static class RaspberryS extends TintedFluidType {
+        public RaspberryS(Properties properties, ResourceLocation stillTexture, ResourceLocation flowingTexture) {
+            super(properties, stillTexture, flowingTexture, new Color(255, 25, 200, 199).getRGB());
+        }
+    }public static class CoconutS extends TintedFluidType {
+        public CoconutS(Properties properties, ResourceLocation stillTexture, ResourceLocation flowingTexture) {
+            super(properties, stillTexture, flowingTexture, new Color(255, 235, 192, 199).getRGB());
+        }
+    }public static class MintS extends TintedFluidType {
+        public MintS(Properties properties, ResourceLocation stillTexture, ResourceLocation flowingTexture) {
+            super(properties, stillTexture, flowingTexture, new Color(129, 255, 192, 199).getRGB());
+        }
+    }public static class BananaS extends TintedFluidType {
+        public BananaS(Properties properties, ResourceLocation stillTexture, ResourceLocation flowingTexture) {
+            super(properties, stillTexture, flowingTexture, new Color(255, 217, 0, 199).getRGB());
+        }
+    }public static class CaramelS extends TintedFluidType {
+        public CaramelS(Properties properties, ResourceLocation stillTexture, ResourceLocation flowingTexture) {
+            super(properties, stillTexture, flowingTexture, new Color(217, 144, 0, 199).getRGB());
+        }
     }
+
 
     public static class TintedFluidType extends FluidType {
         private final ResourceLocation stillTexture;
@@ -228,18 +266,6 @@ public class FluidTypeRegistry {
             this.stillTexture = stillTexture;
             this.flowingTexture = flowingTexture;
             this.tintColor = tintColor;
-        }
-
-        public ResourceLocation getFlowingTexture() {
-            return flowingTexture;
-        }
-
-        public ResourceLocation getStillTexture() {
-            return stillTexture;
-        }
-
-        public int getTintColor() {
-            return tintColor;
         }
 
         @Override
@@ -263,7 +289,7 @@ public class FluidTypeRegistry {
                 @Override
                 public @NotNull Vector3f modifyFogColor(Camera camera, float partialTick, ClientLevel level, int renderDistance, float darkenWorldAmount, Vector3f fluidFogColor) {
                     Color col = new Color(getTintColor());
-                    return new Vector3f(col.getRed(), col.getBlue(), col.getGreen());
+                    return new Vector3f(col.getRed()/255F, col.getBlue()/255F, col.getGreen()/255F);
                 }
 
                 @Override

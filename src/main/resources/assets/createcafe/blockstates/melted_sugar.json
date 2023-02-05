@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "createcafe:fluid/tea"
+      "model": "createcafe:block/melted_sugar"
     }
   }
 }
