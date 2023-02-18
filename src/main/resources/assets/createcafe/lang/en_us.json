@@ -14,12 +14,13 @@
   "itemGroup.createCafeTab": "Create Cafe",
   "itemGroup.createCafeFluidTab": "Create Cafe Fluids",
 
+
   "item.createcafe.mana_berries": "Mana Berries",
   "item.createcafe.oreo": "Oreo",
   "item.createcafe.oreo_dough": "Oreo Dough",
-  "item.createcafe.oreo_half": "Oreo Half",
+  "item.createcafe.oreo_half": "Oreo Cookie",
   "item.createcafe.oreo_incomplete": "Incomplete Oreo",
-  "item.createcafe.oreo_half_raw": "Oreo Half Raw",
+  "item.createcafe.oreo_half_raw": "Pressed Oreo Dough",
   "item.createcafe.oreo_crushed": "Crushed Oreo",
   "item.createcafe.blood_orange": "Blood Orange",
 

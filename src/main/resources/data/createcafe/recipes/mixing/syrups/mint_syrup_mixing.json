@@ -9,7 +9,7 @@
   ],
   "ingredients": [
     {
-      "tag": "neapolitan:mint_leaves"
+      "item": "neapolitan:mint_leaves"
     },
     {
       "amount": 250,

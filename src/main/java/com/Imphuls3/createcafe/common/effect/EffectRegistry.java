@@ -14,9 +14,6 @@ import java.awt.*;
 
 public class EffectRegistry {
     public static DeferredRegister<MobEffect> MOD_EFFECTS = DeferredRegister.create(ForgeRegistries.MOB_EFFECTS, CreateCafe.ID);
-    //TODO fix recipe world load issue
-    public static RegistryObject<MobEffect> WARMTH = MOD_EFFECTS.register("warmth",
-            () -> new WarmthEffect(MobEffectCategory.BENEFICIAL, new Color(255, 180, 85).getRGB()));
     public static RegistryObject<MobEffect> CAFFINATED = MOD_EFFECTS.register("caffeinated",
             () -> new CaffinatedEffect(MobEffectCategory.BENEFICIAL, new Color(255, 200, 0).getRGB())
                     .addAttributeModifier(Attributes.MOVEMENT_SPEED, "91AEAA56-376B-4498-935B-2F7F68070635", 0.2F, AttributeModifier.Operation.MULTIPLY_TOTAL));

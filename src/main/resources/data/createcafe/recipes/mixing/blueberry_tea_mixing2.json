@@ -1,0 +1,29 @@
+{
+  "type": "create:mixing",
+  "conditions": [
+    {
+      "modid": "byg",
+      "type": "forge:mod_loaded"
+    }
+  ],
+  "ingredients": [
+    {
+      "item": "byg:blueberries"
+    },
+    {
+      "fluidTag": "forge:milk",
+      "amount": 250
+    },
+    {
+      "fluid": "createcafe:melted_sugar",
+      "amount": 250
+    }
+  ],
+  "results": [
+    {
+      "fluid": "createcafe:blueberry_tea",
+      "amount": 500
+    }
+  ],
+  "heatRequirement": "heated"
+}

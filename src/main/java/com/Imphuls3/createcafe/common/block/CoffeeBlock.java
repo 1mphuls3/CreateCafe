@@ -2,8 +2,12 @@ package com.Imphuls3.createcafe.common.block;
 
 import com.Imphuls3.createcafe.core.registry.ItemRegistry;
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.util.RandomSource;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.ItemLike;
+import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.CropBlock;
 import net.minecraft.world.level.block.state.BlockState;
@@ -27,8 +31,11 @@ public class CoffeeBlock extends CropBlock {
     }
 
     @Override
-    public VoxelShape getShape(BlockState pState, BlockGetter pLevel, BlockPos pPos, CollisionContext pContext) {
-        return SHAPE_BY_AGE[pState.getValue(this.getAgeProperty())];
+    public VoxelShape getShape(BlockState state, BlockGetter pLevel, BlockPos pPos, CollisionContext pContext) {
+        if(this.getAge(state) < 3) {
+            return SHAPE_BY_AGE[state.getValue(this.getAgeProperty())];
+        }
+        return SHAPE_BY_AGE[3];
     }
 
     @Override
