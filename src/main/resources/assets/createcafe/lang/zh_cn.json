@@ -1,4 +1,4 @@
-  {
+{
     //奶茶流体源
     "block.createcafe.aloe_tea": "芦荟奶茶",
     "block.createcafe.apple_tea": "苹果奶茶",
@@ -15,7 +15,7 @@
     "block.createcafe.dragonfruit_tea": "火龙果奶茶",
     "block.createcafe.durian_tea": "榴莲奶茶",
     "block.createcafe.fig_tea": "无花果奶茶",
-    "block.createcafe.gooseberry_tea": "醋粟奶茶",
+    "block.createcafe.gooseberry_tea": "醋栗奶茶",
     "block.createcafe.grape_tea": "葡萄奶茶",
     "block.createcafe.grapefruit_tea": "西柚奶茶",
     "block.createcafe.guava_tea": "番石榴奶茶",
@@ -75,7 +75,7 @@
     "fluid.createcafe.dragonfruit_tea": "火龙果奶茶",
     "fluid.createcafe.durian_tea": "榴莲奶茶",
     "fluid.createcafe.fig_tea": "无花果奶茶",
-    "fluid.createcafe.gooseberry_tea": "醋粟奶茶",
+    "fluid.createcafe.gooseberry_tea": "醋栗奶茶",
     "fluid.createcafe.grape_tea": "葡萄奶茶",
     "fluid.createcafe.grapefruit_tea": "西柚奶茶",
     "fluid.createcafe.guava_tea": "番石榴奶茶",
@@ -134,7 +134,7 @@
     "item.createcafe.dragonfruit_tea_bucket": "火龙果奶茶桶",
     "item.createcafe.durian_tea_bucket": "榴莲奶茶桶",
     "item.createcafe.fig_tea_bucket": "无花果奶茶桶",
-    "item.createcafe.gooseberry_tea_bucket": "醋粟奶茶桶",
+    "item.createcafe.gooseberry_tea_bucket": "醋栗奶茶桶",
     "item.createcafe.grape_tea_bucket": "葡萄奶茶桶",
     "item.createcafe.grapefruit_tea_bucket": "西柚奶茶桶",
     "item.createcafe.guava_tea_bucket": "番石榴奶茶桶",
@@ -182,7 +182,7 @@
     "item.createcafe.dragonfruit_milk_tea": "火龙果奶茶",
     "item.createcafe.durian_milk_tea": "榴莲奶茶",
     "item.createcafe.fig_milk_tea": "无花果奶茶",
-    "item.createcafe.gooseberry_milk_tea": "醋粟奶茶",
+    "item.createcafe.gooseberry_milk_tea": "醋栗奶茶",
     "item.createcafe.grape_milk_tea": "葡萄奶茶",
     "item.createcafe.grapefruit_milk_tea": "西柚奶茶",
     "item.createcafe.guava_milk_tea": "番石榴奶茶",
