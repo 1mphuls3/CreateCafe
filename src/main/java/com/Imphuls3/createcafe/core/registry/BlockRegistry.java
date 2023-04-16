@@ -26,16 +26,6 @@ public class BlockRegistry extends Blocks{
     public static final RegistryObject<Block> CASSAVA = registerBlockWithoutBlockItem("cassava_crop",
             () -> new CassavaBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion()));
 
-    private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block){
-            RegistryObject<T> toReturn = BLOCKS.register(name, block);
-            registerBlockItem(name, toReturn);
-            return toReturn;
-    }
-    private static <T extends Block> void registerBlockItem(String name, RegistryObject<T> block){
-        ItemRegistry.ITEMS.register(name, () -> new BlockItem(block.get(),
-                new Item.Properties().tab(ModCreativeModeTab.CREATE_CAFE)));
-    }
-
     public static void register(IEventBus eventBus){
         BLOCKS.register(eventBus);
     }
