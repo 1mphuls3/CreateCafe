@@ -14,7 +14,7 @@
                   "condition": "minecraft:block_state_property",
                   "block": "createcafe:coffee_crop",
                   "properties": {
-                    "age": "7"
+                    "age": "3"
                   }
                 }
               ],
@@ -22,7 +22,7 @@
             },
             {
               "type": "minecraft:item",
-              "name": "createcafe:coffee"
+              "name": "createcafe:coffee_beans"
             }
           ]
         }
@@ -52,7 +52,7 @@
           "condition": "minecraft:block_state_property",
           "block": "createcafe:coffee_crop",
           "properties": {
-            "age": 7
+            "age": 3
           }
         }
       ]
@@ -73,7 +73,7 @@
               }
             }
           ],
-          "name": "createcafe:coffee"
+          "name": "createcafe:coffee_beans"
         }
       ],
       "conditions": [
@@ -81,7 +81,7 @@
           "condition": "minecraft:block_state_property",
           "block": "createcafe:coffee_crop",
           "properties": {
-            "age": 7
+            "age": 3
           }
         }
       ]

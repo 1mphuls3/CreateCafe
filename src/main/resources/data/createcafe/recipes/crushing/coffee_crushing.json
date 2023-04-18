@@ -7,15 +7,15 @@
   ],
   "results": [
     {
-      "item": "createcafe:coffee"
+      "item": "createcafe:coffee_beans"
     },
     {
-      "item": "createcafe:coffee",
+      "item": "createcafe:coffee_beans",
       "count": 2,
       "chance": 0.3
     },
     {
-      "item": "createcafe:coffee",
+      "item": "createcafe:coffee_beans",
       "count": 1,
       "chance": 0.2
     }

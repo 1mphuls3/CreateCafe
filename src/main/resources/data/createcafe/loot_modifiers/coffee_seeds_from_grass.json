@@ -6,6 +6,6 @@
       "block": "minecraft:grass"
     }
   ],
-  "addition": "createcafe:coffee",
+  "addition": "createcafe:coffee_beans",
   "type": "createcafe:coffee_seeds_from_grass"
 }
