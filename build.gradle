@@ -19,8 +19,8 @@ apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 apply plugin: 'org.spongepowered.mixin'
 
-version = '1.2.4-1.20.1'
-group = 'com.Imphuls3.createcafe' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+version = "${mod_version}-1.20.1"
+group = 'com.Imphuls3.createcafe'
 archivesBaseName = 'createcafe'
 
 java.toolchain.languageVersion = JavaLanguageVersion.of(17)
@@ -37,7 +37,7 @@ minecraft {
             property 'forge.enabledGameTestNamespaces', 'createcafe'
 
             property 'mixin.env.remapRefMap', 'true'
-            property 'mixin.env.refMapRemappingFile', "C:/Users/isaac/Documents/GitHub/1.18.1/build/createSrgToMcp/output.srg"
+            property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
 
             mods {
                 createcafe {
@@ -97,26 +97,11 @@ minecraft {
 sourceSets.main.resources { srcDir 'src/generated/resources' }
 
 repositories {
-    maven {
-        // location of the maven that hosts JEI files before January 2023
-        name 'Progwm16 maven'
-        url 'https://dvs1.progwml6.com/files/maven'
-    }
-    maven {
-        // location of the maven that hosts JEI files since January 2023
-        name = "Jared's maven"
-        url = "https://maven.blamejared.com/"
-    }
-    maven {
-        // location of a maven mirror for JEI files, as a fallback
-        name = "ModMaven"
-        url = "https://modmaven.dev"
-    }
-    maven {
-        // Mixed mappings, Registrate, Flywheel
-        name 'tterrag maven'
-        url 'https://maven.tterrag.com'
-    }
+    maven { url = 'https://dvs1.progwml6.com/files/maven'}
+    maven { url = "https://maven.blamejared.com" } // JEI
+    maven { url = "https://modmaven.dev" }
+    maven { url = "https://maven.createmod.net" } // Ponder, Flywheel
+    maven { url = "https://maven.ithundxr.dev/mirror" } // Registrate
     maven {
         url 'https://www.cursemaven.com'
         content {
@@ -126,15 +111,22 @@ repositories {
 }
 
 dependencies {
-    minecraft 'net.minecraftforge:forge:1.20.1-47.2.0'
+    minecraft "net.minecraftforge:forge:1.20.1-${forge_version}"
+
+    compileOnly(annotationProcessor("io.github.llamalad7:mixinextras-common:${mixin_extras_version}"))
+    implementation(jarJar("io.github.llamalad7:mixinextras-forge:${mixin_extras_version}")) {
+        jarJar.ranged(it, "[${mixin_extras_version},)")
+    }
 
     implementation fg.deobf("com.simibubi.create:create-${mc_version}:${create_version}:slim") { transitive = false }
-    implementation fg.deobf("com.jozufozu.flywheel:flywheel-forge-${mc_version}:${flywheel_version}")
+    implementation(fg.deobf("net.createmod.ponder:Ponder-Forge-${mc_version}:${ponder_version}"))
     implementation fg.deobf("com.tterrag.registrate:Registrate:${registrate_version}")
 
+    compileOnly(fg.deobf("dev.engine-room.flywheel:flywheel-forge-api-${mc_version}:${flywheel_version}"))
     compileOnly(fg.deobf("mezz.jei:jei-${mc_version}-common-api:${jei_version}"))
     compileOnly(fg.deobf("mezz.jei:jei-${mc_version}-forge-api:${jei_version}"))
 
+    runtimeOnly(fg.deobf("dev.engine-room.flywheel:flywheel-forge-${mc_version}:${flywheel_version}"))
     runtimeOnly(fg.deobf("mezz.jei:jei-${mc_version}-forge:${jei_version}"))
 
     if (System.getProperty('idea.sync.active') != 'true') {
@@ -157,16 +149,3 @@ jar {
 }
 
 jar.finalizedBy('reobfJar')
-
-publishing {
-    publications {
-        mavenJava(MavenPublication) {
-            artifact jar
-        }
-    }
-    repositories {
-        maven {
-            url "file://${project.projectDir}/mcmodsrepo"
-        }
-    }
-}
