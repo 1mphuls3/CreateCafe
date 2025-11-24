@@ -16,7 +16,6 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.UseAnim;
 import net.minecraft.world.level.Level;
-import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
@@ -29,11 +28,11 @@ public class HotCoffeeDrink extends Item {
     }
 
     @Override
-    public void appendHoverText(ItemStack stack, @Nullable Level level, List<Component> tooltip, TooltipFlag advanced) {
-        super.appendHoverText(stack, level, tooltip, advanced);
+    public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltip, TooltipFlag tooltipFlag) {
         tooltip.add(Component.translatable("tooltip.createcafe.caffeinated.one").withStyle(ChatFormatting.BLUE));
         tooltip.add(Component.translatable("tooltip.createcafe.warmth").withStyle(ChatFormatting.BLUE));
         if(type != "none") tooltip.add(Component.translatable("tooltip.createcafe." + type).withStyle(ChatFormatting.BLUE));
+        super.appendHoverText(stack, context, tooltip, tooltipFlag);
     }
 
     @Override

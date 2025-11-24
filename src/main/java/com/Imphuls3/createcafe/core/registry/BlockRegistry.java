@@ -6,20 +6,19 @@ import com.Imphuls3.createcafe.common.block.CoffeeBlock;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraftforge.eventbus.api.IEventBus;
-import net.minecraftforge.registries.DeferredRegister;
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.registries.RegistryObject;
+import net.neoforged.bus.api.IEventBus;
+import net.neoforged.neoforge.registries.DeferredBlock;
+import net.neoforged.neoforge.registries.DeferredRegister;
 
 public class BlockRegistry extends Blocks{
-    public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, CreateCafe.ID);
+    public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(CreateCafe.ID);
 
     //Crops:
-    public static final RegistryObject<Block> COFFEE = BLOCKS.register("coffee_crop",
-            () -> new CoffeeBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion()));
+    public static final DeferredBlock<Block> COFFEE = BLOCKS.register("coffee_crop",
+            () -> new CoffeeBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.WHEAT).noOcclusion()));
 
-    public static final RegistryObject<Block> CASSAVA = BLOCKS.register("cassava_crop",
-            () -> new CassavaBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion()));
+    public static final DeferredBlock<Block> CASSAVA = BLOCKS.register("cassava_crop",
+            () -> new CassavaBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.WHEAT).noOcclusion()));
 
     public static void register(IEventBus eventBus){
         BLOCKS.register(eventBus);

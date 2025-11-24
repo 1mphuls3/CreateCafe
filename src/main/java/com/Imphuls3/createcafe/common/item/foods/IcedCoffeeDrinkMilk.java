@@ -11,9 +11,11 @@ import net.minecraft.sounds.SoundEvents;
 import net.minecraft.stats.Stats;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.item.*;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.item.UseAnim;
 import net.minecraft.world.level.Level;
-import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
@@ -26,16 +28,16 @@ public class IcedCoffeeDrinkMilk extends Item {
     }
 
     @Override
-    public void appendHoverText(ItemStack stack, @Nullable Level level, List<Component> tooltip, TooltipFlag advanced) {
-        super.appendHoverText(stack, level, tooltip, advanced);
+    public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltip, TooltipFlag tooltipFlag) {
         tooltip.add(Component.translatable("tooltip.createcafe.caffeinated").withStyle(ChatFormatting.BLUE));
         if(type != "none") tooltip.add(Component.translatable("tooltip.createcafe." + type).withStyle(ChatFormatting.BLUE));
+        super.appendHoverText(stack, context, tooltip, tooltipFlag);
     }
 
     @Override
     public ItemStack finishUsingItem(ItemStack stack, Level level, LivingEntity livingEntity) {
         super.finishUsingItem(stack, level, livingEntity);
-        if (!level.isClientSide) livingEntity.curePotionEffects(stack);
+        if (!level.isClientSide) livingEntity.removeAllEffects();
         if(CafeConfig.giveEmptyCups.get()) {
             if (livingEntity instanceof ServerPlayer serverplayer) {
                 CriteriaTriggers.CONSUME_ITEM.trigger(serverplayer, stack);
