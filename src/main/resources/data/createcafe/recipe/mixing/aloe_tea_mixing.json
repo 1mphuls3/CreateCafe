@@ -1,0 +1,31 @@
+{
+  "neoforge:conditions": [
+    {
+      "modid": "atmospheric",
+      "type": "neoforge:mod_loaded"
+    }
+  ],
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "item": "atmospheric:aloe_leaves"
+    },
+    {
+      "type": "neoforge:tag",
+      "amount": 250,
+      "tag": "c:milk"
+    },
+    {
+      "type": "neoforge:single",
+      "amount": 250,
+      "fluid": "createcafe:melted_sugar"
+    }
+  ],
+  "results": [
+    {
+      "amount": 500,
+      "id": "createcafe:aloe_tea"
+    }
+  ]
+}

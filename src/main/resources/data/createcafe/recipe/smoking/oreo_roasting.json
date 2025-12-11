@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smoking",
+  "category": "food",
+  "cookingtime": 100,
+  "experience": 0.0,
+  "ingredient": {
+    "item": "createcafe:oreo_half_raw"
+  },
+  "result": {
+    "id": "createcafe:oreo_half"
+  }
+}

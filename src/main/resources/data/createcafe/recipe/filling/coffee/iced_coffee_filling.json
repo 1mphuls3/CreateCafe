@@ -1,0 +1,18 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "createcafe:iced_coffee_cup_ice"
+    },
+    {
+      "type": "neoforge:single",
+      "fluid": "createcafe:coffee",
+      "amount": 250
+    }
+  ],
+  "results": [
+    {
+      "id": "createcafe:iced_coffee"
+    }
+  ]
+}

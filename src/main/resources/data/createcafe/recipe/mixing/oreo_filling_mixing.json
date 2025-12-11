@@ -1,0 +1,22 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "type": "neoforge:single",
+      "fluid": "createcafe:melted_sugar",
+      "amount": 250
+    },
+    {
+      "type": "neoforge:single",
+      "fluid": "minecraft:water",
+      "amount": 250
+    }
+  ],
+  "results": [
+    {
+      "id": "createcafe:filling",
+      "amount": 500
+    }
+  ],
+  "heat_requirement": "heated"
+}

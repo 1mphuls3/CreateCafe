@@ -1,0 +1,20 @@
+{
+  "type": "create:milling",
+  "ingredients": [
+    {
+      "item": "createcafe:oreo"
+    }
+  ],
+  "processingTime": 350,
+  "results": [
+    {
+      "id": "createcafe:oreo_crushed",
+      "count": 1
+    },
+    {
+      "count": 1,
+      "chance": 0.25,
+      "id": "createcafe:oreo_crushed"
+    }
+  ]
+}

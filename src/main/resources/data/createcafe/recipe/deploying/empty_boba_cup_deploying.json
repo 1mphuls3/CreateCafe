@@ -1,0 +1,16 @@
+{
+  "type": "create:deploying",
+  "ingredients": [
+    {
+      "tag": "c:glass_blocks"
+    },
+    {
+      "item": "create:polished_cut_diorite_slab"
+    }
+  ],
+  "results": [
+    {
+      "id": "createcafe:empty_boba_cup"
+    }
+  ]
+}

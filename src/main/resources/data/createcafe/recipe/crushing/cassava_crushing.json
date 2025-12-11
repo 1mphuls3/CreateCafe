@@ -1,0 +1,24 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "createcafe:cassava_root"
+    }
+  ],
+  "processingTime": 350,
+  "results": [
+    {
+      "id": "createcafe:tapioca_flour"
+    },
+    {
+      "count": 2,
+      "chance": 0.25,
+      "id": "createcafe:tapioca_flour"
+    },
+    {
+      "count": 1,
+      "chance": 0.25,
+      "id": "createcafe:cassava_seeds"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "neoforge:conditions": [
+    {
+      "modid": "botania",
+      "type": "neoforge:mod_loaded"
+    }
+  ],
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "createcafe:mana_berries"
+    },
+    {
+      "type": "neoforge:tag",
+      "amount": 250,
+      "tag": "c:milk"
+    },
+    {
+      "type": "neoforge:single",
+      "fluid": "createcafe:melted_sugar",
+      "amount": 250
+    }
+  ],
+  "results": [
+    {
+      "id": "createcafe:mana_tea",
+      "amount": 500
+    }
+  ],
+  "heat_requirement": "heated"
+}

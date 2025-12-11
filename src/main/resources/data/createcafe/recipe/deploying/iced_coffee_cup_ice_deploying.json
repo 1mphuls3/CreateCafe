@@ -1,0 +1,16 @@
+{
+  "type": "create:deploying",
+  "ingredients": [
+    {
+      "item": "createcafe:iced_coffee_cup"
+    },
+    {
+      "item": "minecraft:ice"
+    }
+  ],
+  "results": [
+    {
+      "id": "createcafe:iced_coffee_cup_ice"
+    }
+  ]
+}

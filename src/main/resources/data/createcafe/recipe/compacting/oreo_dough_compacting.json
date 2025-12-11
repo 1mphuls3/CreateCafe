@@ -1,0 +1,13 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "item": "createcafe:oreo_dough"
+    }
+  ],
+  "results": [
+    {
+      "id": "createcafe:oreo_half_raw"
+    }
+  ]
+}

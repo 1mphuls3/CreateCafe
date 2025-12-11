@@ -1,0 +1,25 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "minecraft:sweet_berries"
+    },
+    {
+      "type": "neoforge:tag",
+      "amount": 250,
+      "tag": "c:milk"
+    },
+    {
+      "type": "neoforge:single",
+      "fluid": "createcafe:melted_sugar",
+      "amount": 250
+    }
+  ],
+  "results": [
+    {
+      "id": "createcafe:sweetberry_tea",
+      "amount": 500
+    }
+  ],
+  "heat_requirement": "heated"
+}

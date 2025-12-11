@@ -1,0 +1,15 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "minecraft:sugar"
+    }
+  ],
+  "results": [
+    {
+      "id": "createcafe:melted_sugar",
+      "amount": 250
+    }
+  ],
+  "heat_requirement": "heated"
+}

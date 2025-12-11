@@ -1,0 +1,22 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "type": "neoforge:tag",
+      "amount": 250,
+      "tag": "c:milk"
+    },
+    {
+      "type": "neoforge:single",
+      "amount": 750,
+      "fluid": "createcafe:melted_sugar"
+    }
+  ],
+  "results": [
+    {
+      "amount": 1000,
+      "id": "createcafe:caramel_syrup"
+    }
+  ],
+  "heat_requirement": "heated"
+}

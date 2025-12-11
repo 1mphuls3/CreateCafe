@@ -1,0 +1,35 @@
+{
+  "neoforge:conditions": [
+    {
+      "value":
+      {
+        "tag": "c:foods/cherries",
+        "type": "neoforge:tag_empty"
+      },
+      "type": "neoforge:not"
+    }
+  ],
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "tag": "c:foods/cherries"
+    },
+    {
+      "type": "neoforge:tag",
+      "amount": 250,
+      "tag": "c:milk"
+    },
+    {
+      "type": "neoforge:single",
+      "fluid": "createcafe:melted_sugar",
+      "amount": 250
+    }
+  ],
+  "results": [
+    {
+      "id": "createcafe:cherry_tea",
+      "amount": 500
+    }
+  ],
+  "heat_requirement": "heated"
+}

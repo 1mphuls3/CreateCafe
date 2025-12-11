@@ -1,0 +1,18 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "createcafe:boba_cup"
+    },
+    {
+      "type": "neoforge:single",
+      "fluid": "createcafe:banana_tea",
+      "amount": 250
+    }
+  ],
+  "results": [
+    {
+      "id": "createcafe:banana_milk_tea"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "createcafe:iced_coffee"
+    },
+    {
+      "type": "neoforge:single",
+      "fluid": "createcafe:raspberry_syrup",
+      "amount": 250
+    }
+  ],
+  "results": [
+    {
+      "id": "createcafe:raspberry_iced_coffee"
+    }
+  ]
+}

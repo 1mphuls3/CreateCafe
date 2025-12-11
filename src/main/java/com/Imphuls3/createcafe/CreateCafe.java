@@ -6,10 +6,14 @@ import com.Imphuls3.createcafe.core.registry.*;
 import com.mojang.logging.LogUtils;
 import com.tterrag.registrate.Registrate;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.entity.LivingEntity;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.neoforged.neoforge.common.NeoForge;
+import net.neoforged.neoforge.event.entity.living.MobEffectEvent;
 import org.slf4j.Logger;
 
 @Mod(CreateCafe.ID)
@@ -22,6 +26,7 @@ public class CreateCafe {
 
     public CreateCafe(IEventBus eventBus, ModContainer container) {
         eventBus.addListener(this::commonSetup);
+        NeoForge.EVENT_BUS.addListener(CreateCafe::onEffectExpired);
 
         CreativeTabRegistry.register(eventBus);
         ItemRegistry.register(eventBus);
@@ -44,6 +49,16 @@ public class CreateCafe {
     }
     public static Registrate fluidRegistrate() {
         return FLUIDREGISTRATE;
+    }
+
+    private static void onEffectExpired(MobEffectEvent.Expired event) {
+        LivingEntity entity = event.getEntity();
+        MobEffectInstance effect = event.getEffectInstance();
+        int amplifier = effect.getAmplifier();
+
+        if(effect.is(EffectRegistry.CAFFINATED)) {
+            entity.addEffect(new MobEffectInstance(new MobEffectInstance(EffectRegistry.CAFFEINE_CRASH, 10*20, amplifier)));
+        }
     }
 
     public static ResourceLocation modPath(String path) {

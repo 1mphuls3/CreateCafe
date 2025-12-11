@@ -1,0 +1,18 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "createcafe:boba_cup"
+    },
+    {
+      "type": "neoforge:single",
+      "fluid": "createcafe:pomelo_tea",
+      "amount": 250
+    }
+  ],
+  "results": [
+    {
+      "id": "createcafe:pomelo_milk_tea"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "type": "create:deploying",
+  "ingredients": [
+    {
+      "tag": "c:glass_blocks"
+    },
+    {
+      "item": "create:polished_cut_limestone_slab"
+    }
+  ],
+  "results": [
+    {
+      "id": "createcafe:iced_coffee_cup"
+    }
+  ]
+}

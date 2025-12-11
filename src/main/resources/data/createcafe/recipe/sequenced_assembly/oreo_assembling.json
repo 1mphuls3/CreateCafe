@@ -1,0 +1,52 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "createcafe:oreo_half"
+  },
+  "transitional_item": {
+    "id": "createcafe:oreo_incomplete"
+  },
+  "sequence": [
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "createcafe:oreo_incomplete"
+        },
+        {
+          "type": "neoforge:single",
+          "fluid": "createcafe:filling",
+          "amount": 250
+        }
+      ],
+      "results": [
+        {
+          "id": "createcafe:oreo_incomplete"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createcafe:oreo_incomplete"
+        },
+        {
+          "item": "createcafe:oreo_half"
+        }
+      ],
+      "results": [
+        {
+          "id": "createcafe:oreo"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "id": "createcafe:oreo",
+      "count": 1
+    }
+  ],
+  "loops": 1
+}
